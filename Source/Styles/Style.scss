@@ -79,6 +79,11 @@ body{
                         font-size: $FontSize18px;
                         cursor: pointer;
                         font-weight: $FontWeightBold;
+                        transition: ease-out 0.3s;
+                        &:hover{
+                            box-shadow: inset 174px 0 0 $MainColor;
+                            color: $White;
+                        }
                     }
                 }
             }
@@ -130,8 +135,10 @@ body{
                         cursor: pointer;
                         margin-top: 32px;
                         font-weight: $FontWeightBold;
+                        transition: ease-out 0.3s;
                         &:hover{
-                            box-shadow: -5px 5px 0 $LightBlue;
+                            box-shadow: inset 174px 0 0 $MainColor;
+                            color: $White;
                         }
                     }
                 }
@@ -287,6 +294,7 @@ body{
                 color: $NavyBlue;
                 font-size: $FontSize47px;
                 font-weight: $FontWeightBold;
+                margin-bottom: 50px;
                 }
                 .ProjectOne, .ProjectTwo{
                     display: flex;
@@ -361,6 +369,11 @@ body{
                         cursor: pointer;
                         margin-top: 32px;
                         font-weight: $FontWeightBold;
+                        transition: ease-out 0.3s;
+                        &:hover{
+                            box-shadow: inset 174px 0 0 $MainColor;
+                            color: $White;
+                        }
                     }
                     .ContactMe{
                         margin-left: 24px;

@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #8892B0;
+  background-color: #0A192F;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0A192F;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #495670;
+  border-radius: 52px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #495670;
+}
+
+.Container .NavigationSection nav {
+  padding: 35px 0px 35px 0px;
+}
+
+.Container .NavigationSection nav .Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.Container .NavigationSection nav .Container .LogoContianer .Logo {
+  color: #2274A5;
+  font-size: 47.12px;
+  font-weight: 700;
+}
+
+.Container .NavigationSection nav .Container .Menu .ResumeButton {
+  padding: 16px 32px 16px 32px;
+  border: 2px #2274A5 solid;
+  background-color: transparent !important;
+  color: #2274A5;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.Container .HeroSection {
+  margin-top: 150px;
+}
+
+.Container .HeroSection main .Container {
+  width: 80%;
+  margin: auto;
+}
+
+.Container .HeroSection main .Container .SocialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Container .HeroSection main .Container .SocialMedia .Github {
+  width: 24px;
+  height: 24px;
+}
+
+.Container .HeroSection main .Container .SocialMedia .Line {
+  height: 0px;
+  width: 0px;
+}
+
+.Container .HeroSection main .Container .Hero .Koffivi {
+  font-size: 76.24px;
+  font-weight: 700;
+  color: #CCD6F6;
+}
+
+.Container .HeroSection main .Container .Hero .Passionate {
+  font-size: 47.12px;
+  color: #8892B0;
+  margin-top: 24px;
+}
+
+.Container .HeroSection main .Container .Hero .Description {
+  margin-top: 24px;
+  width: 50%;
+  line-height: 150%;
+}
+
+.Container .HeroSection main .Container .Hero .Description .LearningBringsJoy {
+  color: #2274A5;
+}
+
+.Container .HeroSection main .Container .Hero .ViewProject {
+  padding: 16px 32px 16px 32px;
+  border: 2px #2274A5 solid;
+  background-color: transparent !important;
+  color: #2274A5;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 32px;
+  font-weight: 700;
+}
+
+.Container .HeroSection main .Container .PassionateText .Passionate {
+  font-size: 199.6px;
+  color: #223044;
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 67%;
+  left: 48%;
+}
+
+.Container .AboutMe {
+  margin-top: 350px;
+}
+
+.Container .AboutMe .Container {
+  width: 80%;
+  margin: auto;
+}
+
+.Container .AboutMe .Container .AboutMeTitle {
+  color: #CCD6F6;
+  font-size: 47.12px;
+  font-weight: 700;
+}
+
+.Container .AboutMe .Container .Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Container .AboutMe .Container .Wrapper .Information {
+  margin-top: 50px;
+  width: 45%;
+}
+
+.Container .AboutMe .Container .Wrapper .Information .FromDenver {
+  color: #2274A5;
+  font-size: 29.12;
+}
+
+.Container .AboutMe .Container .Wrapper .Information .Description {
+  margin-top: 24px;
+  width: 100%;
+  line-height: 150%;
+}
+
+.Container .AboutMe .Container .Wrapper .Information .Skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 570px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 32px;
+  row-gap: 24px;
+}
+
+.Container .AboutMe .Container .Wrapper .Information .Skills div {
+  padding: 8px 32px 8px 32px;
+  color: #8892B0;
+  border: 1px #8892B0 solid;
+  margin-right: 24px;
+}
+
+.Container .AboutMe .Container .Wrapper .MyImage {
+  margin-left: 60px;
+  margin-top: 2em;
+}
+
+.Container .AboutMe .Container .Wrapper .MyImage .MeWrapper {
+  width: 210px;
+}
+
+.Container .AboutMe .Container .Wrapper .MyImage .MeWrapper::after {
+  content: " ";
+  display: block;
+  border: 2px #2274A5 solid;
+  right: 100%;
+  width: 290px;
+  height: 283px;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.Container .AboutMe .Container .Wrapper .MyImage .MeWrapper .Me {
+  position: absolute;
+  margin-top: 30px;
+}
+
+.Container .WorkExperienceSection {
+  margin-top: 200px;
+}
+
+.Container .WorkExperienceSection main .Container {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Container .WorkExperienceSection main .Container .Timeline div {
+  border-left: 2px #1D2F4C solid;
+  padding: 16px 0px 16px 16px;
+  color: #1D2F4C;
+}
+
+.Container .WorkExperienceSection main .Container .Timeline .active {
+  border-left: 2px #2274A5 solid;
+  color: #2274A5;
+}
+
+.Container .WorkExperienceSection main .Container .JobDescription {
+  margin-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionOne {
+  margin-top: 24px;
+  width: 568px;
+  line-height: 150%;
+}
+
+.Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionTwo {
+  margin-top: 24px;
+  width: 568px;
+  line-height: 150%;
+}
+
+.Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionTwo .highlighted {
+  color: #2274A5;
+}
+
+.Container .WorkExperienceSection main .Container .JobDescription .ToolsUsed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 570px;
+  margin-top: 32px;
+}
+
+.Container .WorkExperienceSection main .Container .JobDescription .ToolsUsed div {
+  padding: 8px 32px 8px 32px;
+  color: #8892B0;
+  border: 1px #8892B0 solid;
+  margin-right: 24px;
+}
+
+.Container .ProjectSection main .Container {
+  width: 80%;
+  margin: auto;
+}
+
+.Container .ProjectSection main .Container .ProjectTitle {
+  color: #CCD6F6;
+  font-size: 47.12px;
+  font-weight: 700;
+}
+
+.Container .ProjectSection main .Container .ProjectOne, .Container .ProjectSection main .Container .ProjectTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .Information .TitleLinkWrapper, .Container .ProjectSection main .Container .ProjectTwo .Information .TitleLinkWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 460px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #CCD6F6;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .Information .ProjectDescriptionOne, .Container .ProjectSection main .Container .ProjectOne .Information .ProjectDescriptionTwo, .Container .ProjectSection main .Container .ProjectTwo .Information .ProjectDescriptionOne, .Container .ProjectSection main .Container .ProjectTwo .Information .ProjectDescriptionTwo {
+  width: 516px;
+  margin-top: 24px;
+  line-height: 150%;
+}
+
+.Container .ProjectSection main .Container .ProjectTwo {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+}
+/*# sourceMappingURL=Style.css.map */

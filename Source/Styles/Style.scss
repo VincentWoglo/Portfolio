@@ -1,7 +1,9 @@
-$NavyBlue: #0A192F;
+$BackgroundColor: #fffae7;
 $LightBlue: #2274A5;
+$NavyBlue: #223044;
+$MainColor: #364964;
 $BlueWhite: #CCD6F6;
-$DarkBlueWhite: #8892B0;
+$DarkBlueWhite: #a8b2d1;
 $LightNavyBlue: #3B4861;
 $White: #fff;
 $GreyNavy: #223044;
@@ -9,7 +11,7 @@ $LightNavy: #1D2F4C;
 
 $FontSize199px: 199.6px;
 $FontSize76px: 76.24px;
-$FontSize47px: 47.12px;
+$FontSize47px: 32px;
 $FontSize29px: 29.12;
 $FontSize18px: 18px;
 
@@ -26,10 +28,31 @@ $Padding8x32: 8px 32px 8px 32px;
     scroll-behavior: smooth;
 }
 body{
-    color: $DarkBlueWhite;
-    background-color: $NavyBlue;
+    color: $MainColor;
+    background-color: $BackgroundColor;
     font-family: 'Roboto', sans-serif;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $BackgroundColor;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $MainColor;
+    border-radius: 52px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $MainColor;
+  }
 
 .Container{
     .NavigationSection{
@@ -42,7 +65,7 @@ body{
                 margin: auto;
                 .LogoContianer{
                     .Logo{
-                        color: $LightBlue;
+                        color: $NavyBlue;
                         font-size: $FontSize47px;
                         font-weight: $FontWeightBold;
                     }
@@ -50,9 +73,9 @@ body{
                 .Menu{
                     .ResumeButton{
                         padding: $Padding16x32;
-                        border: 2px $LightBlue solid;
+                        border: 2px $NavyBlue solid;
                         background-color: transparent !important;
-                        color:  $LightBlue;
+                        color:  $NavyBlue;
                         font-size: $FontSize18px;
                         cursor: pointer;
                         font-weight: $FontWeightBold;
@@ -83,16 +106,16 @@ body{
                     .Koffivi{
                         font-size: $FontSize76px;
                         font-weight: $FontWeightBold;
-                        color: $BlueWhite;
+                        color: $NavyBlue;
                     }
                     .Passionate{
                         font-size: $FontSize47px;
-                        color: $DarkBlueWhite;
+                        color: $MainColor;
                         margin-top: 24px;
                     }
                     .Description{
                         margin-top: 24px;
-                        width: 70%;
+                        width: 50%;
                         line-height: 150%;
                         .LearningBringsJoy{
                             color: $LightBlue;
@@ -100,13 +123,16 @@ body{
                     }
                     .ViewProject{
                         padding: $Padding16x32;
-                        border: 2px $LightBlue solid;
+                        border: 2px $NavyBlue solid;
                         background-color: transparent !important;
-                        color: $LightBlue;
+                        color: $NavyBlue;
                         font-size: $FontSize18px;
                         cursor: pointer;
                         margin-top: 32px;
                         font-weight: $FontWeightBold;
+                        &:hover{
+                            box-shadow: -5px 5px 0 $LightBlue;
+                        }
                     }
                 }
                 .PassionateText{
@@ -127,19 +153,20 @@ body{
         .Container{
             width: 80%;
             margin: auto;
-            .Wrapper{
-                display: flex;
             .AboutMeTitle{
-                color: $BlueWhite;
+                color: $NavyBlue;
                 font-size: $FontSize47px;
                 font-weight: $FontWeightBold;
             }
+            .Wrapper{
+                display: flex;
+                align-items: center;
             .Information{
                 margin-top: 50px;
-                width: 48.5%;
+                width: 45%;
                 .FromDenver{
                     color: $LightBlue;
-                    color: $FontSize29px;
+                    font-size: $FontSize29px;
                 }
                 .Description{
                     margin-top: 24px;
@@ -149,29 +176,43 @@ body{
                 .Skills{
                     display: flex;
                     width: 570px;
-                    justify-content: space-between;
+                    flex-wrap:wrap;
                     margin-top: 32px;
+                    row-gap: 24px;
                     div{
                         padding: $Padding8x32;
-                        color: $GreyNavy;
-                        border: 2px $GreyNavy solid;
+                        color: $MainColor;
+                        border: 1px $MainColor solid;
+                        margin-right: 24px;
+                        box-shadow: -5px 5px 0 $LightBlue;
                     }
                 }
             }
             .MyImage{
                 margin-left: 60px;
-                .BackgroundAffect{
-                    border: 2px $LightBlue solid;
-                    width: 289.33px;
-                    height: 282.26px;
-                    margin-left: 1.5em;
-                    position: relative;
-                }
-                .Me{
-                    position: absolute;
-                    top: 124%;
+                margin-top: 2em;
+                .MeWrapper{
+                    width: 210px;
+                    &::after{
+                        content: " ";
+                        display: block;
+                        border: 5px $LightBlue solid;
+                        right: 100%;
+                        width: 290px;
+                        height: 283px;
+                        box-sizing: inherit;
+                        margin-left: 20px;
+                        margin-top: 20px;
 
+                        
+                    }
+                    .Me{
+                        position: absolute;
+                        margin-top: 30px;
+    
+                    }
                 }
+                
             }
         }
         }
@@ -181,7 +222,7 @@ body{
         margin-top: 200px;
         main{
             .Container{
-                width: 70%;
+                width: 80%;
                 margin: auto;
                 display: flex;
                 .Timeline{
@@ -200,20 +241,131 @@ body{
                     display: flex;
                     flex-direction: column;
                     .Year2021Description{
+                        .Company{
+                            color: $NavyBlue;
+                        }
+                        .DescriptionOne{
+                            margin-top: 24px;
+                            width: 568px;
+                            line-height: 150%;
+                        }
+                        .DescriptionTwo{
+                            margin-top: 24px;
+                            width: 568px;
+                            line-height: 150%;
+                            .highlighted{
+                                color: $LightBlue;
+                            }
+                        }
                     }
-                    .Toolsuser{
-                        display: flex;
-                width: 570px;
-                justify-content: space-between;
-                margin-top: 32px;
-                div{
-                    padding: $Padding8x32;
-                    color: $GreyNavy;
-                    border: 2px $GreyNavy solid;
-                }
+                    .ToolsUsed{
+                    display: flex;
+                    width: 570px;
+                    margin-top: 32px;
+                        div{
+                            padding: $Padding8x32;
+                            color: $MainColor;
+                            border: 1px $LightBlue solid;
+                            margin-right: 24px;
+
+                        box-shadow: -5px 5px 0 $LightBlue;
+                        }
                     }
                 }
                 
+            }
+        }
+    }
+    .ProjectSection{
+        margin-top: 200px;
+        main{
+            width: 80%;
+            margin: auto;
+            .Container{
+                width: 80%;
+                .ProjectTitle{
+                color: $NavyBlue;
+                font-size: $FontSize47px;
+                font-weight: $FontWeightBold;
+                }
+                .ProjectOne, .ProjectTwo{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .Information{
+                        margin-left: 32px;
+                        .TitleLinkWrapper{
+                            display: flex;
+                            width: 460px;
+                            justify-content: space-between;
+                            color: $NavyBlue;
+                            align-items: center;
+                            img{
+                                width: 20px;
+                                height: 20px;
+                                cursor: pointer;
+                            }
+                        }
+                        .ProjectDescriptionOne, .ProjectDescriptionTwo{
+                            width: 516px;
+                            margin-top: 24px;
+                            line-height: 150%;
+                        }
+                        .ToolsUsed{
+
+                    display: flex;
+                    width: 570px;
+                    margin-top: 32px;
+                        div{
+                            padding: $Padding8x32;
+                            color: $MainColor;
+                            border: 1px $LightBlue solid;
+                            margin-right: 24px;
+
+                        box-shadow: -5px 5px 0 $LightBlue;
+                        }
+                        }
+                    }
+                }
+                .ProjectTwo{
+                    margin-top: 80px;
+                }
+            }
+        }
+    }
+
+    .ContactSection{
+        margin-top: 120px;
+        padding-bottom: 50px;
+        main{
+            width: 80%;
+            margin: auto;
+            .Container{
+                width: 70%;
+                .GetInTouch{
+                    color: $NavyBlue;
+                }
+                .GetInTouch, .Description, .CallToAction{
+                    text-align: center;
+                }
+                .Description{
+                    margin-top: 24px;
+                }
+                .CallToAction{
+                    input{
+                        padding: $Padding8x32;
+                        border: 2px $LightBlue solid;
+                        background-color: transparent !important;
+                        color: $LightBlue;
+                        font-size: $FontSize18px;
+                        cursor: pointer;
+                        margin-top: 32px;
+                        font-weight: $FontWeightBold;
+                    }
+                    .ContactMe{
+                        margin-left: 24px;
+                    }
+                }
             }
         }
     }

@@ -9,6 +9,9 @@ body {
   color: #364964;
   background-color: #fffae7;
   font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
 }
 
 /* width */
@@ -147,7 +150,7 @@ body {
   position: absolute;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  top: 67%;
+  top: 650px;
   left: 48%;
 }
 
@@ -329,68 +332,14 @@ body {
   margin-bottom: 50px;
 }
 
-.Container .ProjectSection main .Container .ProjectOne, .Container .ProjectSection main .Container .ProjectTwo {
+.Container .ProjectSection main .Container .ProjectTwo {
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.Container .ProjectSection main .Container .ProjectOne .Information, .Container .ProjectSection main .Container .ProjectTwo .Information {
-  margin-left: 32px;
-}
-
-.Container .ProjectSection main .Container .ProjectOne .Information .TitleLinkWrapper, .Container .ProjectSection main .Container .ProjectTwo .Information .TitleLinkWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 460px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #223044;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.Container .ProjectSection main .Container .ProjectOne .Information .TitleLinkWrapper img, .Container .ProjectSection main .Container .ProjectTwo .Information .TitleLinkWrapper img {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.Container .ProjectSection main .Container .ProjectOne .Information .ProjectDescriptionOne, .Container .ProjectSection main .Container .ProjectOne .Information .ProjectDescriptionTwo, .Container .ProjectSection main .Container .ProjectTwo .Information .ProjectDescriptionOne, .Container .ProjectSection main .Container .ProjectTwo .Information .ProjectDescriptionTwo {
-  width: 516px;
-  margin-top: 24px;
-  line-height: 150%;
-}
-
-.Container .ProjectSection main .Container .ProjectOne .Information .ToolsUsed, .Container .ProjectSection main .Container .ProjectTwo .Information .ToolsUsed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 570px;
-  margin-top: 32px;
-}
-
-.Container .ProjectSection main .Container .ProjectOne .Information .ToolsUsed div, .Container .ProjectSection main .Container .ProjectTwo .Information .ToolsUsed div {
-  padding: 8px 32px 8px 32px;
-  color: #364964;
-  border: 1px #2274A5 solid;
-  margin-right: 24px;
-  -webkit-box-shadow: -5px 5px 0 #2274A5;
-          box-shadow: -5px 5px 0 #2274A5;
-}
-
-.Container .ProjectSection main .Container .ProjectTwo {
-  margin-top: 80px;
 }
 
 .Container .ContactSection {
@@ -440,5 +389,35 @@ body {
 
 .Container .ContactSection main .Container .CallToAction .ContactMe {
   margin-left: 24px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .HeroSection {
+    margin-top: 150px;
+  }
+  .HeroSection main .Container {
+    width: 80%;
+    margin: auto;
+  }
+  .HeroSection main .Container .SocialMedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .HeroSection main .Container .SocialMedia .Github {
+    width: 24px;
+    height: 24px;
+  }
+  .HeroSection main .Container .SocialMedia .Line {
+    height: 0px;
+    width: 0px;
+  }
+  .HeroSection main .Container .PassionateText {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Style.css.map */

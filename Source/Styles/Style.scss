@@ -31,8 +31,10 @@ body{
     color: $MainColor;
     background-color: $BackgroundColor;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
 }
-
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -148,7 +150,7 @@ body{
                         color: $GreyNavy;
                         position: absolute;
                         transform: rotate(90deg);
-                        top: 67%;
+                        top: 650px;//used to be 67%
                         left: 48%;
                     }
                 }
@@ -188,8 +190,8 @@ body{
                     row-gap: 24px;
                     div{
                         padding: $Padding8x32;
-                        color: $MainColor;
-                        border: 1px $MainColor solid;
+                        color: $LightBlue;
+                        border: 1px $LightBlue solid;
                         margin-right: 24px;
                         box-shadow: -5px 5px 0 $LightBlue;
                     }
@@ -271,7 +273,7 @@ body{
                     margin-top: 32px;
                         div{
                             padding: $Padding8x32;
-                            color: $MainColor;
+                            color: $LightBlue;
                             border: 1px $LightBlue solid;
                             margin-right: 24px;
 
@@ -296,47 +298,10 @@ body{
                 font-weight: $FontWeightBold;
                 margin-bottom: 50px;
                 }
-                .ProjectOne, .ProjectTwo{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    .Information{
-                        margin-left: 32px;
-                        .TitleLinkWrapper{
-                            display: flex;
-                            width: 460px;
-                            justify-content: space-between;
-                            color: $NavyBlue;
-                            align-items: center;
-                            img{
-                                width: 20px;
-                                height: 20px;
-                                cursor: pointer;
-                            }
-                        }
-                        .ProjectDescriptionOne, .ProjectDescriptionTwo{
-                            width: 516px;
-                            margin-top: 24px;
-                            line-height: 150%;
-                        }
-                        .ToolsUsed{
-
-                    display: flex;
-                    width: 570px;
-                    margin-top: 32px;
-                        div{
-                            padding: $Padding8x32;
-                            color: $MainColor;
-                            border: 1px $LightBlue solid;
-                            margin-right: 24px;
-
-                        box-shadow: -5px 5px 0 $LightBlue;
-                        }
-                        }
-                    }
-                }
                 .ProjectTwo{
                     margin-top: 80px;
+                    display: flex;
+                    justify-content: space-between;
                 }
             }
         }
@@ -378,6 +343,33 @@ body{
                     .ContactMe{
                         margin-left: 24px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .HeroSection{
+        margin-top: 150px;
+        main{
+            .Container{
+                width: 80%;
+                margin: auto;
+                .SocialMedia{
+                    display: flex;
+                    flex-direction: column;
+                    .Github{
+                        width: 24px;
+                        height: 24px;
+                    }
+                    .Line{
+                        height: 0px;
+                        width: 0px;
+                    }
+                }
+                .PassionateText{
+                    display: none;
                 }
             }
         }

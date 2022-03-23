@@ -1,0 +1,378 @@
+$BackgroundColor: #fffae7;
+$LightBlue: #2274A5;
+$NavyBlue: #223044;
+$MainColor: #364964;
+$BlueWhite: #CCD6F6;
+$DarkBlueWhite: #a8b2d1;
+$LightNavyBlue: #3B4861;
+$White: #fff;
+$GreyNavy: #223044;
+$LightNavy: #1D2F4C;
+
+$FontSize199px: 199.6px;
+$FontSize76px: 76.24px;
+$FontSize47px: 32px;
+$FontSize29px: 29.12;
+$FontSize18px: 18px;
+
+$FontWeightBold: 700;
+
+$Padding16x32: 16px 32px 16px 32px;
+$Padding8x32: 8px 32px 8px 32px;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    color: $MainColor;
+    background-color: $BackgroundColor;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $BackgroundColor;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $MainColor;
+    border-radius: 52px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $MainColor;
+  }
+
+.Container{
+    .NavigationSection{
+        nav{
+            padding: 35px 0px 35px 0px;
+            .Container{
+                display: flex;
+                justify-content: space-between;
+                width: 80%;
+                margin: auto;
+                .LogoContianer{
+                    .Logo{
+                        cursor: pointer;
+                        color: $NavyBlue;
+                        font-size: $FontSize47px;
+                        font-weight: $FontWeightBold;
+                    }
+                }
+                .Menu{
+                    .ResumeButton{
+                        padding: $Padding16x32;
+                        border: 2px $NavyBlue solid;
+                        background-color: transparent !important;
+                        color:  $NavyBlue;
+                        font-size: $FontSize18px;
+                        cursor: pointer;
+                        font-weight: $FontWeightBold;
+                        transition: ease-out 0.3s;
+                        &:hover{
+                            box-shadow: inset 174px 0 0 $MainColor;
+                            color: $White;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .HeroSection{
+        margin-top: 150px;
+        main{
+            .Container{
+                width: 80%;
+                margin: auto;
+                .SocialMedia{
+                    display: flex;
+                    flex-direction: column;
+                    .Github{
+                        width: 24px;
+                        height: 24px;
+                    }
+                    .Line{
+                        height: 0px;
+                        width: 0px;
+                    }
+            }
+                .Hero{
+                    .Koffivi{
+                        font-size: $FontSize76px;
+                        font-weight: $FontWeightBold;
+                        color: $NavyBlue;
+                    }
+                    .Passionate{
+                        font-size: $FontSize47px;
+                        color: $MainColor;
+                        margin-top: 24px;
+                    }
+                    .Description{
+                        margin-top: 24px;
+                        width: 50%;
+                        line-height: 150%;
+                        .LearningBringsJoy{
+                            color: $LightBlue;
+                        }
+                    }
+                    .ViewProject{
+                        padding: $Padding16x32;
+                        border: 2px $NavyBlue solid;
+                        background-color: transparent !important;
+                        color: $NavyBlue;
+                        font-size: $FontSize18px;
+                        cursor: pointer;
+                        margin-top: 32px;
+                        font-weight: $FontWeightBold;
+                        transition: ease-out 0.3s;
+                        &:hover{
+                            box-shadow: inset 174px 0 0 $MainColor;
+                            color: $White;
+                        }
+                    }
+                }
+                .PassionateText{
+                    .Passionate{
+                        font-size: $FontSize199px;
+                        color: $GreyNavy;
+                        position: absolute;
+                        transform: rotate(90deg);
+                        top: 650px;//used to be 67%
+                        left: 48%;
+                    }
+                }
+            }
+        }
+    }
+    .AboutMe{
+        margin-top: 350px;
+        .Container{
+            width: 80%;
+            margin: auto;
+            .AboutMeTitle{
+                color: $NavyBlue;
+                font-size: $FontSize47px;
+                font-weight: $FontWeightBold;
+            }
+            .Wrapper{
+                display: flex;
+                align-items: center;
+            .Information{
+                margin-top: 50px;
+                width: 45%;
+                .FromDenver{
+                    color: $LightBlue;
+                    font-size: $FontSize29px;
+                }
+                .Description{
+                    margin-top: 24px;
+                    width: 100%;
+                    line-height: 150%;
+                }
+                .Skills{
+                    display: flex;
+                    width: 570px;
+                    flex-wrap:wrap;
+                    margin-top: 32px;
+                    row-gap: 24px;
+                    div{
+                        padding: $Padding8x32;
+                        color: $LightBlue;
+                        border: 1px $LightBlue solid;
+                        margin-right: 24px;
+                        box-shadow: -5px 5px 0 $LightBlue;
+                    }
+                }
+            }
+            .MyImage{
+                margin-left: 60px;
+                margin-top: 2em;
+                .MeWrapper{
+                    width: 210px;
+                    &::after{
+                        content: " ";
+                        display: block;
+                        border: 5px $LightBlue solid;
+                        right: 100%;
+                        width: 290px;
+                        height: 283px;
+                        box-sizing: inherit;
+                        margin-left: 20px;
+                        margin-top: 20px;
+
+                        
+                    }
+                    .Me{
+                        position: absolute;
+                        margin-top: 30px;
+    
+                    }
+                }
+                
+            }
+        }
+        }
+    }
+
+    .WorkExperienceSection{
+        margin-top: 200px;
+        main{
+            .Container{
+                width: 80%;
+                margin: auto;
+                display: flex;
+                .Timeline{
+                    div{
+                        border-left: 2px $LightNavy solid;
+                        padding: 16px 0px 16px 16px;
+                        color: $LightNavy;
+                    }
+                    .active{
+                        border-left: 2px $LightBlue solid;
+                        color: $LightBlue;
+                    }
+                }
+                .JobDescription{
+                    margin-left: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    .Year2021Description{
+                        .Company{
+                            color: $NavyBlue;
+                        }
+                        .DescriptionOne{
+                            margin-top: 24px;
+                            width: 568px;
+                            line-height: 150%;
+                        }
+                        .DescriptionTwo{
+                            margin-top: 24px;
+                            width: 568px;
+                            line-height: 150%;
+                            .highlighted{
+                                color: $LightBlue;
+                            }
+                        }
+                    }
+                    .ToolsUsed{
+                    display: flex;
+                    width: 570px;
+                    margin-top: 32px;
+                        div{
+                            padding: $Padding8x32;
+                            color: $LightBlue;
+                            border: 1px $LightBlue solid;
+                            margin-right: 24px;
+
+                        box-shadow: -5px 5px 0 $LightBlue;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .ProjectSection{
+        margin-top: 200px;
+        main{
+            width: 80%;
+            margin: auto;
+            .Container{
+                width: 80%;
+                .ProjectTitle{
+                color: $NavyBlue;
+                font-size: $FontSize47px;
+                font-weight: $FontWeightBold;
+                margin-bottom: 50px;
+                }
+                .ProjectTwo{
+                    margin-top: 80px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    .ContactSection{
+        margin-top: 120px;
+        padding-bottom: 50px;
+        main{
+            width: 80%;
+            margin: auto;
+            .Container{
+                width: 70%;
+                .GetInTouch{
+                    color: $NavyBlue;
+                }
+                .GetInTouch, .Description, .CallToAction{
+                    text-align: center;
+                }
+                .Description{
+                    margin-top: 24px;
+                }
+                .CallToAction{
+                    input{
+                        padding: $Padding8x32;
+                        border: 2px $LightBlue solid;
+                        background-color: transparent !important;
+                        color: $LightBlue;
+                        font-size: $FontSize18px;
+                        cursor: pointer;
+                        margin-top: 32px;
+                        font-weight: $FontWeightBold;
+                        transition: ease-out 0.3s;
+                        &:hover{
+                            box-shadow: inset 174px 0 0 $MainColor;
+                            color: $White;
+                        }
+                    }
+                    .ContactMe{
+                        margin-left: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .HeroSection{
+        margin-top: 150px;
+        main{
+            .Container{
+                width: 80%;
+                margin: auto;
+                .SocialMedia{
+                    display: flex;
+                    flex-direction: column;
+                    .Github{
+                        width: 24px;
+                        height: 24px;
+                    }
+                    .Line{
+                        height: 0px;
+                        width: 0px;
+                    }
+                }
+                .PassionateText{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,13 +1,16 @@
-Hero = document.getElementById("Hero")
+Hero = document.getElementsByClassName("HeroText")
 NavigationContainer = document.getElementById("NavigationContainer")
 gsap.from(Hero, {
     opacity: 0,
-    duration: 1.5,
-    y:-50
+    duration: .9,
+    y:-50,
+    stagger: 1,
+    delay: .050,
+    ease: Power2.easeOut
 })
 gsap.from(NavigationContainer, {
     opacity: 0,
     duration: 1.3,
-    delay: 0.5,
-    y:0
+    delay: 4,
+    y:0,
 })

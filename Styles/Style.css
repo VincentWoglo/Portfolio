@@ -6,33 +6,10 @@
 }
 
 body {
-  color: #364964;
+  color: #304056;
   background-color: #fffae7;
   font-family: 'Roboto', sans-serif;
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #fffae7;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #364964;
-  border-radius: 52px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #364964;
+  overflow-x: hidden;
 }
 
 .Container .NavigationSection nav {
@@ -48,6 +25,9 @@ body {
           justify-content: space-between;
   width: 80%;
   margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Container .NavigationSection nav .Container .LogoContianer .Logo {
@@ -70,8 +50,8 @@ body {
 }
 
 .Container .NavigationSection nav .Container .Menu .ResumeButton:hover {
-  -webkit-box-shadow: inset 174px 0 0 #364964;
-          box-shadow: inset 174px 0 0 #364964;
+  -webkit-box-shadow: inset 174px 0 0 #304056;
+          box-shadow: inset 174px 0 0 #304056;
   color: #fff;
 }
 
@@ -112,7 +92,7 @@ body {
 
 .Container .HeroSection main .Container .Hero .Passionate {
   font-size: 32px;
-  color: #364964;
+  color: #304056;
   margin-top: 24px;
 }
 
@@ -140,8 +120,8 @@ body {
 }
 
 .Container .HeroSection main .Container .Hero .ViewProject:hover {
-  -webkit-box-shadow: inset 174px 0 0 #364964;
-          box-shadow: inset 174px 0 0 #364964;
+  -webkit-box-shadow: inset 174px 0 0 #304056;
+          box-shadow: inset 174px 0 0 #304056;
   color: #fff;
 }
 
@@ -157,6 +137,8 @@ body {
 
 .Container .AboutMe {
   margin-top: 350px;
+  -webkit-transition: ease-out 1s;
+  transition: ease-out 1s;
 }
 
 .Container .AboutMe .Container {
@@ -244,6 +226,8 @@ body {
 
 .Container .WorkExperienceSection {
   margin-top: 200px;
+  -webkit-transition: ease-out 1s;
+  transition: ease-out 1s;
 }
 
 .Container .WorkExperienceSection main .Container {
@@ -315,6 +299,8 @@ body {
 
 .Container .ProjectSection {
   margin-top: 200px;
+  -webkit-transition: ease-out 1s;
+  transition: ease-out 1s;
 }
 
 .Container .ProjectSection main {
@@ -323,7 +309,7 @@ body {
 }
 
 .Container .ProjectSection main .Container {
-  width: 80%;
+  width: 100%;
 }
 
 .Container .ProjectSection main .Container .ProjectTitle {
@@ -333,7 +319,7 @@ body {
   margin-bottom: 50px;
 }
 
-.Container .ProjectSection main .Container .ProjectTwo {
+.Container .ProjectSection main .Container .ProjectOne, .Container .ProjectSection main .Container .ProjectTwo {
   margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,6 +327,81 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .ProjectImage, .Container .ProjectSection main .Container .ProjectTwo .ProjectImage {
+  width: 50%;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .ProjectImage .Image, .Container .ProjectSection main .Container .ProjectTwo .ProjectImage .Image {
+  width: 100%;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .Information, .Container .ProjectSection main .Container .ProjectTwo .Information {
+  width: 50%;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .Information .TitleLinkWrapper, .Container .ProjectSection main .Container .ProjectTwo .Information .TitleLinkWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .Information .ProjectDescriptionOne, .Container .ProjectSection main .Container .ProjectOne .Information .ProjectDescriptionTwo, .Container .ProjectSection main .Container .ProjectTwo .Information .ProjectDescriptionOne, .Container .ProjectSection main .Container .ProjectTwo .Information .ProjectDescriptionTwo {
+  width: 90%;
+  line-height: 150%;
+  margin-top: 24px;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .ToolsUsed, .Container .ProjectSection main .Container .ProjectTwo .ToolsUsed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 570px;
+  margin-top: 32px;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .ToolsUsed div, .Container .ProjectSection main .Container .ProjectTwo .ToolsUsed div {
+  padding: 8px 32px 8px 32px;
+  color: #2274A5;
+  border: 1px #2274A5 solid;
+  margin-right: 24px;
+  -webkit-box-shadow: -5px 5px 0 #2274A5;
+          box-shadow: -5px 5px 0 #2274A5;
+}
+
+.Container .ProjectSection main .Container .ProjectTwo {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .Information {
+  width: 50%;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .Information .TitleLinkWrapper {
+  margin-left: 10%;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .Information .ProjectDescriptionOne {
+  margin-left: 10%;
+}
+
+.Container .ProjectSection main .Container .ProjectOne .ToolsUsed {
+  margin-left: 10%;
 }
 
 .Container .ContactSection {
@@ -354,7 +415,7 @@ body {
 }
 
 .Container .ContactSection main .Container {
-  width: 70%;
+  width: 100%;
 }
 
 .Container .ContactSection main .Container .GetInTouch {
@@ -383,8 +444,8 @@ body {
 }
 
 .Container .ContactSection main .Container .CallToAction input:hover {
-  -webkit-box-shadow: inset 174px 0 0 #364964;
-          box-shadow: inset 174px 0 0 #364964;
+  -webkit-box-shadow: inset 174px 0 0 #304056;
+          box-shadow: inset 174px 0 0 #304056;
   color: #fff;
 }
 

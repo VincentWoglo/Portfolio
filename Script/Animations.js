@@ -14,3 +14,7 @@ gsap.from(NavigationContainer, {
     delay: 4,
     y:0,
 })
+
+ScrollReveal().reveal('.AboutMe', { delay: 300 });
+ScrollReveal().reveal('.WorkExperienceSection', { delay: 300 });
+ScrollReveal().reveal('.ProjectSection', { delay: 300 });

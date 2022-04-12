@@ -88,7 +88,7 @@ body{
                         height: 0px;
                         width: 0px;
                     }
-            }
+                }
                 .Hero{
                     .Koffivi{
                         font-size: $FontSize76px;
@@ -384,28 +384,172 @@ body{
 }
 
 @media only screen and (max-width: 1350px) {
+.Container{
     .HeroSection{
         margin-top: 150px;
         main{
             .Container{
                 width: 80%;
                 margin: auto;
-                .SocialMedia{
-                    display: flex;
-                    flex-direction: column;
-                    .Github{
-                        width: 24px;
-                        height: 24px;
-                    }
-                    .Line{
-                        height: 0px;
-                        width: 0px;
-                    }
-                }
                 .PassionateText{
                     display: none;
+                }
+                .Hero{
+                    .Description{
+                        margin-top: 24px;
+                        width: 70%;
+                        min-width: 505px;
+                        line-height: 150%;
+                    }
                 }
             }
         }
     }
 }
+}
+@media only screen and (max-width: 990px){
+    .Container{
+        .ProjectSection{
+            margin-top: 200px;
+            transition: ease-out 1s;
+            main{
+                width: 80%;
+                margin: auto;
+                .Container{
+                    width: 100%;
+                    .ProjectTitle{
+                    color: $NavyBlue;
+                    font-size: $FontSize47px;
+                    font-weight: $FontWeightBold;
+                    margin-bottom: 50px;
+                    }
+                    .ProjectOne, .ProjectTwo{
+                        margin-top: 80px;
+                        display: block;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        .ProjectImage{
+                            width: 100%;
+                            .Image{
+                                width: 100%;
+                            }
+                        }
+                        .Information{
+                            width: 100%;
+                            margin-top: 24px;
+                            .TitleLinkWrapper{
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                                align-items: center;
+                            }
+                            .ProjectDescriptionOne, .ProjectDescriptionTwo{
+                                width: 100%;
+                                line-height: 150%;
+                                margin-top: 24px;
+                            }
+                        }
+                        .ToolsUsed{
+                            display: flex;
+                            width: 570px;
+                            margin-top: 32px;
+                            div{
+                                padding: $Padding8x32;
+                                color: $LightBlue;
+                                border: 1px $LightBlue solid;
+                                margin-right: 24px;
+                                box-shadow: -5px 5px 0 $LightBlue;
+                            }
+                        }
+                    }
+                    .ProjectTwo{
+                        flex-flow: row-reverse;
+                    }
+                    .ProjectOne{
+                        .Information{
+                            width: 100%;
+                            .TitleLinkWrapper{
+                                margin-left: 0%;
+                            }
+                            .ProjectDescriptionOne{
+                                margin-left: 0%;
+                            }
+                        }
+                        .ToolsUsed{
+                                margin-left: 0%;
+                        }
+                    }
+                }
+            }
+        }
+        .AboutMe{
+            margin-top: 350px;
+            transition: ease-out 1s;
+            .Container{
+                width: 80%;
+                margin: auto;
+                .AboutMeTitle{
+                    color: $NavyBlue;
+                    font-size: $FontSize47px;
+                    font-weight: $FontWeightBold;
+                    width: 100%;
+                }
+                .Wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    flex-flow: column-reverse;
+                    align-items: center;
+                .Information{
+                    margin-top: 50px;
+                    width: 100%;
+                    .FromDenver{
+                        color: $LightBlue;
+                        font-size: $FontSize29px;
+                    }
+                    .Description{
+                        margin-top: 24px;
+                        width: 100%;
+                        line-height: 150%;
+                    }
+                    .Skills{
+                        display: flex;
+                        width: 570px;
+                        flex-wrap:wrap;
+                        margin-top: 32px;
+                        row-gap: 24px;
+                        div{
+                            padding: $Padding8x32;
+                            color: $LightBlue;
+                            border: 1px $LightBlue solid;
+                            margin-right: 24px;
+                            box-shadow: -5px 5px 0 $LightBlue;
+                        }
+                    }
+                }
+                .MyImage{
+                    width: 100%;
+                    margin: auto;
+                    margin-top: 2em;
+                    .MeWrapper{
+                        width: 100%;
+                        &::after{
+                            display: none;
+                        }
+                        .Me{
+                            width: 100%;
+                            position: static;
+                            margin-top: 0px;
+                            height: 60vh;
+        
+                        }
+                    }
+                    
+                }
+            }
+            }
+        }
+    }
+}
+
+//68.24px font

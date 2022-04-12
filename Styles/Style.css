@@ -454,14 +454,130 @@ body {
 }
 
 @media only screen and (max-width: 1350px) {
-  .HeroSection {
+  .Container .HeroSection {
     margin-top: 150px;
   }
-  .HeroSection main .Container {
+  .Container .HeroSection main .Container {
     width: 80%;
     margin: auto;
   }
-  .HeroSection main .Container .SocialMedia {
+  .Container .HeroSection main .Container .PassionateText {
+    display: none;
+  }
+  .Container .HeroSection main .Container .Hero .Description {
+    margin-top: 24px;
+    width: 70%;
+    min-width: 505px;
+    line-height: 150%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .Container .ProjectSection {
+    margin-top: 200px;
+    -webkit-transition: ease-out 1s;
+    transition: ease-out 1s;
+  }
+  .Container .ProjectSection main {
+    width: 80%;
+    margin: auto;
+  }
+  .Container .ProjectSection main .Container {
+    width: 100%;
+  }
+  .Container .ProjectSection main .Container .ProjectTitle {
+    color: #223044;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  .Container .ProjectSection main .Container .ProjectOne, .Container .ProjectSection main .Container .ProjectTwo {
+    margin-top: 80px;
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Container .ProjectSection main .Container .ProjectOne .ProjectImage, .Container .ProjectSection main .Container .ProjectTwo .ProjectImage {
+    width: 100%;
+  }
+  .Container .ProjectSection main .Container .ProjectOne .ProjectImage .Image, .Container .ProjectSection main .Container .ProjectTwo .ProjectImage .Image {
+    width: 100%;
+  }
+  .Container .ProjectSection main .Container .ProjectOne .Information, .Container .ProjectSection main .Container .ProjectTwo .Information {
+    width: 100%;
+    margin-top: 24px;
+  }
+  .Container .ProjectSection main .Container .ProjectOne .Information .TitleLinkWrapper, .Container .ProjectSection main .Container .ProjectTwo .Information .TitleLinkWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Container .ProjectSection main .Container .ProjectOne .Information .ProjectDescriptionOne, .Container .ProjectSection main .Container .ProjectOne .Information .ProjectDescriptionTwo, .Container .ProjectSection main .Container .ProjectTwo .Information .ProjectDescriptionOne, .Container .ProjectSection main .Container .ProjectTwo .Information .ProjectDescriptionTwo {
+    width: 100%;
+    line-height: 150%;
+    margin-top: 24px;
+  }
+  .Container .ProjectSection main .Container .ProjectOne .ToolsUsed, .Container .ProjectSection main .Container .ProjectTwo .ToolsUsed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 570px;
+    margin-top: 32px;
+  }
+  .Container .ProjectSection main .Container .ProjectOne .ToolsUsed div, .Container .ProjectSection main .Container .ProjectTwo .ToolsUsed div {
+    padding: 8px 32px 8px 32px;
+    color: #2274A5;
+    border: 1px #2274A5 solid;
+    margin-right: 24px;
+    -webkit-box-shadow: -5px 5px 0 #2274A5;
+            box-shadow: -5px 5px 0 #2274A5;
+  }
+  .Container .ProjectSection main .Container .ProjectTwo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+  }
+  .Container .ProjectSection main .Container .ProjectOne .Information {
+    width: 100%;
+  }
+  .Container .ProjectSection main .Container .ProjectOne .Information .TitleLinkWrapper {
+    margin-left: 0%;
+  }
+  .Container .ProjectSection main .Container .ProjectOne .Information .ProjectDescriptionOne {
+    margin-left: 0%;
+  }
+  .Container .ProjectSection main .Container .ProjectOne .ToolsUsed {
+    margin-left: 0%;
+  }
+  .Container .AboutMe {
+    margin-top: 350px;
+    -webkit-transition: ease-out 1s;
+    transition: ease-out 1s;
+  }
+  .Container .AboutMe .Container {
+    width: 80%;
+    margin: auto;
+  }
+  .Container .AboutMe .Container .AboutMeTitle {
+    color: #223044;
+    font-size: 32px;
+    font-weight: 700;
+    width: 100%;
+  }
+  .Container .AboutMe .Container .Wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -469,17 +585,59 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .HeroSection main .Container .SocialMedia .Github {
-    width: 24px;
-    height: 24px;
+  .Container .AboutMe .Container .Wrapper .Information {
+    margin-top: 50px;
+    width: 100%;
   }
-  .HeroSection main .Container .SocialMedia .Line {
-    height: 0px;
-    width: 0px;
+  .Container .AboutMe .Container .Wrapper .Information .FromDenver {
+    color: #2274A5;
+    font-size: 29.12;
   }
-  .HeroSection main .Container .PassionateText {
+  .Container .AboutMe .Container .Wrapper .Information .Description {
+    margin-top: 24px;
+    width: 100%;
+    line-height: 150%;
+  }
+  .Container .AboutMe .Container .Wrapper .Information .Skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 570px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 32px;
+    row-gap: 24px;
+  }
+  .Container .AboutMe .Container .Wrapper .Information .Skills div {
+    padding: 8px 32px 8px 32px;
+    color: #2274A5;
+    border: 1px #2274A5 solid;
+    margin-right: 24px;
+    -webkit-box-shadow: -5px 5px 0 #2274A5;
+            box-shadow: -5px 5px 0 #2274A5;
+  }
+  .Container .AboutMe .Container .Wrapper .MyImage {
+    width: 100%;
+    margin: auto;
+    margin-top: 2em;
+  }
+  .Container .AboutMe .Container .Wrapper .MyImage .MeWrapper {
+    width: 100%;
+  }
+  .Container .AboutMe .Container .Wrapper .MyImage .MeWrapper::after {
     display: none;
+  }
+  .Container .AboutMe .Container .Wrapper .MyImage .MeWrapper .Me {
+    width: 100%;
+    position: static;
+    margin-top: 0px;
+    height: 60vh;
   }
 }
 /*# sourceMappingURL=Style.css.map */

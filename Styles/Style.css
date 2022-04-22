@@ -84,6 +84,11 @@ body {
   width: 0px;
 }
 
+.Container .HeroSection main .Container .Hero .HeroText {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
 .Container .HeroSection main .Container .Hero .Koffivi {
   font-size: 76.24px;
   font-weight: 700;
@@ -98,7 +103,7 @@ body {
 
 .Container .HeroSection main .Container .Hero .Description {
   margin-top: 24px;
-  width: 50%;
+  width: 60%;
   line-height: 150%;
 }
 
@@ -133,12 +138,14 @@ body {
           transform: rotate(90deg);
   top: 650px;
   left: 48%;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .Container .AboutMe {
   margin-top: 350px;
-  -webkit-transition: ease-out 1s;
-  transition: ease-out 1s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .Container .AboutMe .Container {
@@ -226,8 +233,8 @@ body {
 
 .Container .WorkExperienceSection {
   margin-top: 200px;
-  -webkit-transition: ease-out 1s;
-  transition: ease-out 1s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .Container .WorkExperienceSection main .Container {
@@ -320,7 +327,7 @@ body {
 }
 
 .Container .ProjectSection main .Container .ProjectOne, .Container .ProjectSection main .Container .ProjectTwo {
-  margin-top: 80px;
+  margin-bottom: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,6 +454,7 @@ body {
   -webkit-box-shadow: inset 174px 0 0 #304056;
           box-shadow: inset 174px 0 0 #304056;
   color: #fff;
+  border: 2px #304056 solid;
 }
 
 .Container .ContactSection main .Container .CallToAction .ContactMe {

@@ -90,6 +90,9 @@ body{
                     }
                 }
                 .Hero{
+                    .HeroText{
+                        transition-duration: 1s;
+                    }
                     .Koffivi{
                         font-size: $FontSize76px;
                         font-weight: $FontWeightBold;
@@ -102,7 +105,7 @@ body{
                     }
                     .Description{
                         margin-top: 24px;
-                        width: 50%;
+                        width: 60%;
                         line-height: 150%;
                         .LearningBringsJoy{
                             color: $LightBlue;
@@ -132,6 +135,7 @@ body{
                         transform: rotate(90deg);
                         top: 650px;//used to be 67%
                         left: 48%;
+                        transition-duration: 1s;
                     }
                 }
             }
@@ -139,7 +143,7 @@ body{
     }
     .AboutMe{
         margin-top: 350px;
-        transition: ease-out 1s;
+        transition-duration: 1s;
         .Container{
             width: 80%;
             margin: auto;
@@ -210,7 +214,7 @@ body{
 
     .WorkExperienceSection{
         margin-top: 200px;
-        transition: ease-out 1s;
+        transition-duration: 1s;
         main{
             .Container{
                 width: 80%;
@@ -282,7 +286,7 @@ body{
                 margin-bottom: 50px;
                 }
                 .ProjectOne, .ProjectTwo{
-                    margin-top: 80px;
+                    margin-bottom: 80px;
                     display: flex;
                     justify-content: space-between;
                     width: 100%;
@@ -372,6 +376,7 @@ body{
                         &:hover{
                             box-shadow: inset 174px 0 0 $MainColor;
                             color: $White;
+                            border: 2px $MainColor solid;
                         }
                     }
                     .ContactMe{

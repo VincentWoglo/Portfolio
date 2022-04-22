@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./Styles/Style.css">
     <title>Koffivi V. Woglo</title>
 </head>
@@ -38,15 +37,16 @@
                         </p>
                         <input type="button" class="ViewProject HeroText" value="View Project">
                     </div>
-                    <aside class="PassionateText">
+                    <!-- Passionate text on the aside-->
+                    <!--<aside class="PassionateText">
                         <h1 class="Passionate" id="PassionateText">Passionate</h1>
-                    </aside>
+                    </aside>-->
                 </div>
             </main>
         </section>
 
-        <section class="AboutMe" id="AboutMe">
-            <div class="Container">
+        <section class="AboutMe">
+            <div class="Container" id="AboutMe">
                 <h2 class="AboutMeTitle">About Me</h2>
                 <div class="Wrapper">
                 <div class="Information">
@@ -89,9 +89,9 @@
             </div>
         </section>
         
-        <section class="WorkExperienceSection" id="WorkExperienceSection">
+        <section class="WorkExperienceSection">
             <main>
-                <div class="Container">
+                <div class="Container" id="WorkExperienceSection">
                     <div class="Timeline">
                         <div class="Year2021 active">2021</div>
                         <div class="Year2020">2020</div>
@@ -118,13 +118,13 @@
             </main>
         </section>
 
-        <section class="ProjectSection" id="ProjectSection">
+        <section class="ProjectSection">
             <main>
-                <div class="Container">
+                <div class="Container" id="ProjectSection">
                     <h1 class="ProjectTitle">
                         Projects
                     </h1>
-                    <div class="ProjectOne">
+                    <div class="ProjectOne" id="Projects">
                         <div class="ProjectImage">
                             <img src="./Images/unsplash_I6wCDYW6ij8.png" alt="Project One Image" class="Image">
                         </div>
@@ -146,7 +146,51 @@
                     </div>
 
 
-                    <div class="ProjectTwo">
+                    <div class="ProjectTwo" id="Projects">
+
+                        <div class="ProjectImage">
+                            <img src="./Images/Doorchefthumbnail.png" alt="Project Two Image" class="Image">
+                        </div>
+                        <div class="Information">
+                            <div class="TitleLinkWrapper">
+                                <h1 class="DoorChef">
+                                    DoorChef
+                                </h1>
+                                <img src="./Images/iconmonstr-share-11 3.svg" alt="" class="LinkTwo">
+                            </div>
+                            <p class="ProjectDescriptionTwo">
+                                This is a platform for restaurant owners to find users to freelance for them. Chefs can send a request to the restaurant’s listing and the owner can either choose to accept or regect. This version of the app does not yet take care of the transactions going on between the chefs and the restaurant owners
+                            </p>
+                            <div class="ToolsUsed">
+                                <div class="TootOne">Figma</div>
+                                <div class="TootTwo">PHP</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ProjectOne" id="Projects">
+                        <div class="ProjectImage">
+                            <img src="./Images/unsplash_I6wCDYW6ij8.png" alt="Project One Image" class="Image">
+                        </div>
+                        <div class="Information">
+                            <div class="TitleLinkWrapper">
+                                <h1 class="Learnture">
+                                    Learnture
+                                </h1>
+                                <img src="./Images/iconmonstr-share-11 3.svg" alt="" class="LinkOne">
+                            </div>
+                            <p class="ProjectDescriptionOne">
+                                Search engine for developers to find easy to understand solutions to their problems. I came up with this project when I realized that people were explaining simple computer science concept in a very complicated way. Research topics that others and I have struggled and manually enter these data in through a CMS that I’ve built with text editor library.
+                            </p>
+                            <div class="ToolsUsed">
+                                <div class="TootOne">Figma</div>
+                                <div class="TootTwo">PHP</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="ProjectTwo" id="Projects">
 
                         <div class="ProjectImage">
                             <img src="./Images/Doorchefthumbnail.png" alt="Project Two Image" class="Image">
@@ -191,6 +235,7 @@
 </body>
 <!-- smooth scroll-->
 <script src="./Script/smooth-scrollbar.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="./Script/Animations.js"></script>
 </html>

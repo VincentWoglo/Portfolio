@@ -1,3 +1,4 @@
+window.addEventListener('load', function() {
 Hero = document.getElementsByClassName("HeroText")
 NavigationContainer = document.getElementById("NavigationContainer")
 AboutMe = document.getElementById("AboutMe")
@@ -8,17 +9,17 @@ ContactSection = document.getElementById("ContactSection")
 
 gsap.from(Hero, {
     opacity: 0,
-    duration: .9,
+    duration: .15,
     y:-50,
     stagger: 1,
-    delay: .050,
-    ease: Power2.easeOut
+    delay: 1.5,
+    ease: Power2.easeIn
 })
 gsap.from(PassionateText, {
     opacity: 0,
-    duration: 1.3,
-    delay: .5,
-    y:-50,
+    duration: .7,
+    delay: 1.7,
+    y:0,
 })
 
 gsap.from(NavigationContainer, {
@@ -60,6 +61,24 @@ gsap.from(ContactSection, {
     delay: 3,
     ease: Power2.easeOut
 })
-ScrollReveal().reveal('.AboutMe', { delay: 500});
-ScrollReveal().reveal('.WorkExperienceSection', { delay: 500});
-ScrollReveal().reveal('.ProjectSection', { delay: 500});
+let ScrollAnimationArray = [
+    document.querySelector('.AboutMe'),
+    document.querySelector('.WorkExperienceSection'),
+    document.querySelector('#Projects'),
+    document.querySelector('#ContactSection')
+]
+
+let ScrollAnimationArrayProjects = document.querySelectorAll('#Projects')
+
+let ScrollAnimation = {
+    opacity: 0,
+    distance: "20%",
+    origin: "bottom",
+    delay: 200
+}
+
+
+
+ScrollReveal().reveal(ScrollAnimationArray, ScrollAnimation);
+ScrollReveal().reveal(ScrollAnimationArrayProjects, ScrollAnimation);
+})

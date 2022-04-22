@@ -293,6 +293,9 @@ body {
   display: flex;
   width: 570px;
   margin-top: 32px;
+  row-gap: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .Container .WorkExperienceSection main .Container .JobDescription .ToolsUsed div {
@@ -377,6 +380,9 @@ body {
   display: flex;
   width: 570px;
   margin-top: 32px;
+  row-gap: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .Container .ProjectSection main .Container .ProjectOne .ToolsUsed div, .Container .ProjectSection main .Container .ProjectTwo .ToolsUsed div {
@@ -409,6 +415,9 @@ body {
 
 .Container .ProjectSection main .Container .ProjectOne .ToolsUsed {
   margin-left: 10%;
+  row-gap: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .Container .ContactSection {
@@ -543,6 +552,9 @@ body {
     display: flex;
     width: 570px;
     margin-top: 32px;
+    row-gap: 24px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .Container .ProjectSection main .Container .ProjectOne .ToolsUsed div, .Container .ProjectSection main .Container .ProjectTwo .ToolsUsed div {
     padding: 8px 32px 8px 32px;
@@ -569,6 +581,9 @@ body {
   }
   .Container .ProjectSection main .Container .ProjectOne .ToolsUsed {
     margin-left: 0%;
+    row-gap: 24px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .Container .AboutMe {
     margin-top: 350px;

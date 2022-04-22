@@ -257,6 +257,8 @@ body{
                     display: flex;
                     width: 570px;
                     margin-top: 32px;
+                    row-gap: 24px;
+                    flex-wrap: wrap;
                         div{
                             padding: $Padding8x32;
                             color: $LightBlue;
@@ -315,6 +317,8 @@ body{
                         display: flex;
                         width: 570px;
                         margin-top: 32px;
+                        row-gap: 24px;
+                        flex-wrap: wrap;
                         div{
                             padding: $Padding8x32;
                             color: $LightBlue;
@@ -339,6 +343,8 @@ body{
                     }
                     .ToolsUsed{
                             margin-left: 10%;
+                            row-gap: 24px;
+                            flex-wrap: wrap;
                     }
                 }
             }
@@ -459,6 +465,8 @@ body{
                             display: flex;
                             width: 570px;
                             margin-top: 32px;
+                            row-gap: 24px;
+                            flex-wrap: wrap;
                             div{
                                 padding: $Padding8x32;
                                 color: $LightBlue;
@@ -483,6 +491,8 @@ body{
                         }
                         .ToolsUsed{
                                 margin-left: 0%;
+                                row-gap: 24px;
+                                flex-wrap: wrap;
                         }
                     }
                 }

@@ -6,6 +6,7 @@ PassionateText = document.getElementById("PassionateText")
 WorkExperienceSection = document.getElementById("WorkExperienceSection")
 ProjectSection = document.getElementById("ProjectSection")
 ContactSection = document.getElementById("ContactSection")
+ContactSectionScroll = document.querySelector("ContactSection")
 ViewProject = document.getElementById("ViewProject")
 
 gsap.from(Hero, {
@@ -66,7 +67,6 @@ let ScrollAnimationArray = [
     document.querySelector('.AboutMe'),
     document.querySelector('.WorkExperienceSection'),
     document.querySelector('#Projects'),
-    document.querySelector('.ContactSection')
 ]
 
 let ScrollAnimationArrayProjects = document.querySelectorAll('#Projects')
@@ -82,13 +82,11 @@ let ScrollAnimation = {
 
 ScrollReveal().reveal(ScrollAnimationArray, ScrollAnimation);
 ScrollReveal().reveal(ScrollAnimationArrayProjects, ScrollAnimation);
+ScrollReveal().reveal(ContactSectionScroll, ScrollAnimation);
 
 //Scroll into view
 ViewProject.addEventListener("click", function(){
-    Offset = 20
-    XAxis = ProjectSection.getBoundingClientRect()["x"]
-    YAxis = ProjectSection.getBoundingClientRect()["y"]
-    scrollTo(XAxis,YAxis - Offset)
-    console.log("Done")
+    ProjectSection.scrollIntoView({inline: "nearest"})
 })
+
 })

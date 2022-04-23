@@ -188,7 +188,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 570px;
+  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 32px;
@@ -266,19 +266,23 @@ body {
           flex-direction: column;
 }
 
+.Container .WorkExperienceSection main .Container .JobDescription .Year2021Description {
+  width: 100%;
+}
+
 .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .Company {
   color: #223044;
 }
 
 .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionOne {
   margin-top: 24px;
-  width: 50%;
+  width: 65%;
   line-height: 150%;
 }
 
 .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionTwo {
   margin-top: 24px;
-  width: 50%;
+  width: 65%;
   line-height: 150%;
 }
 
@@ -290,7 +294,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 570px;
+  width: 80%;
   margin-top: 32px;
   row-gap: 24px;
   -ms-flex-wrap: wrap;
@@ -376,7 +380,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 570px;
+  width: 80%;
   margin-top: 32px;
   row-gap: 24px;
   -ms-flex-wrap: wrap;
@@ -415,6 +419,7 @@ body {
   row-gap: 24px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 80%;
 }
 
 .Container .ContactSection {
@@ -480,8 +485,23 @@ body {
   }
   .Container .HeroSection main .Container .Hero .Description {
     margin-top: 24px;
-    width: 70%;
-    min-width: 505px;
+    width: 100%;
+    line-height: 150%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description {
+    width: 100%;
+  }
+  .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionOne {
+    margin-top: 24px;
+    width: 100%;
+    line-height: 150%;
+  }
+  .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionTwo {
+    margin-top: 24px;
+    width: 100%;
     line-height: 150%;
   }
 }
@@ -547,7 +567,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 570px;
+    width: 80%;
     margin-top: 32px;
     row-gap: 24px;
     -ms-flex-wrap: wrap;
@@ -584,6 +604,7 @@ body {
     row-gap: 24px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 80%;
   }
   .Container .AboutMe {
     margin-top: 350px;
@@ -631,7 +652,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 570px;
+    width: 80%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 32px;
@@ -660,6 +681,69 @@ body {
     position: static;
     margin-top: 0px;
     height: 60vh;
+  }
+  .Container .WorkExperienceSection main .Container .Timeline {
+    width: 20%;
+  }
+  .Container .WorkExperienceSection main .Container .JobDescription {
+    width: 80%;
+    margin-left: -20px;
+  }
+  .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description {
+    width: 100%;
+  }
+  .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionOne {
+    margin-top: 24px;
+    width: 100%;
+    line-height: 150%;
+  }
+  .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionTwo {
+    margin-top: 24px;
+    width: 100%;
+    line-height: 150%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Container .WorkExperienceSection main .Container {
+    display: block;
+  }
+  .Container .WorkExperienceSection main .Container .Timeline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+  .Container .WorkExperienceSection main .Container .Timeline div {
+    border-left: 0;
+    border-bottom: 1px #304056 solid;
+  }
+  .Container .WorkExperienceSection main .Container .Timeline .active {
+    border-left: 0;
+    border-bottom: 2px #2274A5 solid;
+  }
+  .Container .WorkExperienceSection main .Container .JobDescription {
+    width: 100%;
+    margin: 0;
+    margin-top: 24px;
+  }
+  .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description {
+    width: 100%;
+  }
+  .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionOne {
+    margin-top: 24px;
+    width: 100%;
+    line-height: 150%;
+  }
+  .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionTwo {
+    margin-top: 24px;
+    width: 100%;
+    line-height: 150%;
   }
 }
 /*# sourceMappingURL=Style.css.map */

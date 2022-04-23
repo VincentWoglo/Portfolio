@@ -169,7 +169,7 @@ body{
                 }
                 .Skills{
                     display: flex;
-                    width: 570px;
+                    width: 100%;
                     flex-wrap:wrap;
                     margin-top: 32px;
                     row-gap: 24px;
@@ -236,17 +236,18 @@ body{
                     display: flex;
                     flex-direction: column;
                     .Year2021Description{
+                        width: 100%;
                         .Company{
                             color: $NavyBlue;
                         }
                         .DescriptionOne{
                             margin-top: 24px;
-                            width: 50%;
+                            width: 65%;
                             line-height: 150%;
                         }
                         .DescriptionTwo{
                             margin-top: 24px;
-                            width: 50%;
+                            width: 65%;
                             line-height: 150%;
                             .highlighted{
                                 color: $LightBlue;
@@ -255,7 +256,7 @@ body{
                     }
                     .ToolsUsed{
                     display: flex;
-                    width: 570px;
+                    width: 80%;
                     margin-top: 32px;
                     row-gap: 24px;
                     flex-wrap: wrap;
@@ -314,7 +315,7 @@ body{
                     }
                     .ToolsUsed{
                         display: flex;
-                        width: 570px;
+                        width: 80%;
                         margin-top: 32px;
                         row-gap: 24px;
                         flex-wrap: wrap;
@@ -344,6 +345,7 @@ body{
                             margin-left: 10%;
                             row-gap: 24px;
                             flex-wrap: wrap;
+                            width: 80%;
                     }
                 }
             }
@@ -407,9 +409,36 @@ body{
                 .Hero{
                     .Description{
                         margin-top: 24px;
-                        width: 70%;
-                        min-width: 505px;
+                        width: 100%;
                         line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media only screen and (max-width: 1200px){
+.Container{
+
+    .WorkExperienceSection{
+        main{
+            .Container{
+                .Timeline{
+                }
+                .JobDescription{
+                    .Year2021Description{
+                        width: 100%;
+                        .DescriptionOne{
+                            margin-top: 24px;
+                            width: 100%;
+                            line-height: 150%;
+                        }
+                        .DescriptionTwo{
+                            margin-top: 24px;
+                            width: 100%;
+                            line-height: 150%;
+                        }
                     }
                 }
             }
@@ -462,7 +491,7 @@ body{
                         }
                         .ToolsUsed{
                             display: flex;
-                            width: 570px;
+                            width: 80%;
                             margin-top: 32px;
                             row-gap: 24px;
                             flex-wrap: wrap;
@@ -496,6 +525,7 @@ body{
                                 margin-left: 0%;
                                 row-gap: 24px;
                                 flex-wrap: wrap;
+                                width: 80%;
                         }
                     }
                 }
@@ -532,7 +562,7 @@ body{
                     }
                     .Skills{
                         display: flex;
-                        width: 570px;
+                        width: 80%;
                         flex-wrap:wrap;
                         margin-top: 32px;
                         row-gap: 24px;
@@ -567,7 +597,75 @@ body{
             }
             }
         }
+        .WorkExperienceSection{
+            main{
+                .Container{
+                    .Timeline{
+                        width: 20%;
+                    }
+                    .JobDescription{
+                        width: 80%;
+                        margin-left: -20px;
+                        .Year2021Description{
+                            width: 100%;
+                            .DescriptionOne{
+                                margin-top: 24px;
+                                width: 100%;
+                                line-height: 150%;
+                            }
+                            .DescriptionTwo{
+                                margin-top: 24px;
+                                width: 100%;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-//68.24px font
+@media only screen and (max-width: 650px){
+    .Container{
+        .WorkExperienceSection{
+            main{
+                .Container{
+                    display: block;
+                    .Timeline{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        margin: 0;
+                        div{
+                            border-left: 0;
+                            border-bottom: 1px $MainColor solid;
+                        }
+                        .active{
+                            border-left: 0;
+                            border-bottom: 2px $LightBlue solid;
+                        }
+                    }
+                    .JobDescription{
+                        width: 100%;
+                        margin: 0;
+                        margin-top: 24px;
+                        .Year2021Description{
+                            width: 100%;
+                            .DescriptionOne{
+                                margin-top: 24px;
+                                width: 100%;
+                                line-height: 150%;
+                            }
+                            .DescriptionTwo{
+                                margin-top: 24px;
+                                width: 100%;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

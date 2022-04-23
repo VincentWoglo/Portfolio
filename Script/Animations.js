@@ -6,6 +6,7 @@ PassionateText = document.getElementById("PassionateText")
 WorkExperienceSection = document.getElementById("WorkExperienceSection")
 ProjectSection = document.getElementById("ProjectSection")
 ContactSection = document.getElementById("ContactSection")
+ViewProject = document.getElementById("ViewProject")
 
 gsap.from(Hero, {
     opacity: 0,
@@ -65,7 +66,7 @@ let ScrollAnimationArray = [
     document.querySelector('.AboutMe'),
     document.querySelector('.WorkExperienceSection'),
     document.querySelector('#Projects'),
-    document.querySelector('#ContactSection')
+    document.querySelector('.ContactSection')
 ]
 
 let ScrollAnimationArrayProjects = document.querySelectorAll('#Projects')
@@ -81,4 +82,13 @@ let ScrollAnimation = {
 
 ScrollReveal().reveal(ScrollAnimationArray, ScrollAnimation);
 ScrollReveal().reveal(ScrollAnimationArrayProjects, ScrollAnimation);
+
+//Scroll into view
+ViewProject.addEventListener("click", function(){
+    Offset = 50
+    XAxis = ProjectSection.getBoundingClientRect()["x"]
+    YAxis = ProjectSection.getBoundingClientRect()["y"]
+    scrollTo(XAxis,YAxis - Offset)
+    console.log("Done")
+})
 })

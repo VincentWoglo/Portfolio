@@ -175,10 +175,10 @@ body{
                     row-gap: 24px;
                     div{
                         padding: $Padding8x32;
-                        color: $LightBlue;
+                        color: $BackgroundColor;
                         border: 2.5px $LightBlue solid;
                         margin-right: 24px;
-                        box-shadow: -6px 6px 0 $LightBlue;
+                        background-color: $LightBlue;
                     }
                 }
             }
@@ -241,12 +241,12 @@ body{
                         }
                         .DescriptionOne{
                             margin-top: 24px;
-                            width: 568px;
+                            width: 50%;
                             line-height: 150%;
                         }
                         .DescriptionTwo{
                             margin-top: 24px;
-                            width: 568px;
+                            width: 50%;
                             line-height: 150%;
                             .highlighted{
                                 color: $LightBlue;
@@ -261,11 +261,10 @@ body{
                     flex-wrap: wrap;
                         div{
                             padding: $Padding8x32;
-                            color: $LightBlue;
+                            color: $BackgroundColor;
                             border: 2.5px $LightBlue solid;
                             margin-right: 24px;
-
-                        box-shadow: -6px 6px 0 $LightBlue;
+                            background-color: $LightBlue;
                         }
                     }
                 }
@@ -321,10 +320,10 @@ body{
                         flex-wrap: wrap;
                         div{
                             padding: $Padding8x32;
-                            color: $LightBlue;
+                            color: $BackgroundColor;
                             border: 2.5px $LightBlue solid;
                             margin-right: 24px;
-                            box-shadow: -6px 6px 0 $LightBlue;
+                            background-color: $LightBlue;
                         }
                     }
                 }
@@ -472,7 +471,11 @@ body{
                                 color: $LightBlue;
                                 border: 2.5px $LightBlue solid;
                                 margin-right: 24px;
-                                box-shadow: -6px 6px 0 $LightBlue;
+                                padding: $Padding8x32;
+                                color: $BackgroundColor;
+                                border: 2.5px $LightBlue solid;
+                                margin-right: 24px;
+                                background-color: $LightBlue;
                             }
                         }
                     }
@@ -535,10 +538,10 @@ body{
                         row-gap: 24px;
                         div{
                             padding: $Padding8x32;
-                            color: $LightBlue;
+                            color: $BackgroundColor;
                             border: 2.5px $LightBlue solid;
                             margin-right: 24px;
-                            box-shadow: -6px 6px 0 $LightBlue;
+                            background-color: $LightBlue;
                         }
                     }
                 }

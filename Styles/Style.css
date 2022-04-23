@@ -197,11 +197,10 @@ body {
 
 .Container .AboutMe .Container .Wrapper .Information .Skills div {
   padding: 8px 32px 8px 32px;
-  color: #2274A5;
+  color: #fffae7;
   border: 2.5px #2274A5 solid;
   margin-right: 24px;
-  -webkit-box-shadow: -6px 6px 0 #2274A5;
-          box-shadow: -6px 6px 0 #2274A5;
+  background-color: #2274A5;
 }
 
 .Container .AboutMe .Container .Wrapper .MyImage {
@@ -273,13 +272,13 @@ body {
 
 .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionOne {
   margin-top: 24px;
-  width: 568px;
+  width: 50%;
   line-height: 150%;
 }
 
 .Container .WorkExperienceSection main .Container .JobDescription .Year2021Description .DescriptionTwo {
   margin-top: 24px;
-  width: 568px;
+  width: 50%;
   line-height: 150%;
 }
 
@@ -300,11 +299,10 @@ body {
 
 .Container .WorkExperienceSection main .Container .JobDescription .ToolsUsed div {
   padding: 8px 32px 8px 32px;
-  color: #2274A5;
+  color: #fffae7;
   border: 2.5px #2274A5 solid;
   margin-right: 24px;
-  -webkit-box-shadow: -6px 6px 0 #2274A5;
-          box-shadow: -6px 6px 0 #2274A5;
+  background-color: #2274A5;
 }
 
 .Container .ProjectSection {
@@ -387,11 +385,10 @@ body {
 
 .Container .ProjectSection main .Container .ProjectOne .ToolsUsed div, .Container .ProjectSection main .Container .ProjectTwo .ToolsUsed div {
   padding: 8px 32px 8px 32px;
-  color: #2274A5;
+  color: #fffae7;
   border: 2.5px #2274A5 solid;
   margin-right: 24px;
-  -webkit-box-shadow: -6px 6px 0 #2274A5;
-          box-shadow: -6px 6px 0 #2274A5;
+  background-color: #2274A5;
 }
 
 .Container .ProjectSection main .Container .ProjectTwo {
@@ -561,8 +558,11 @@ body {
     color: #2274A5;
     border: 2.5px #2274A5 solid;
     margin-right: 24px;
-    -webkit-box-shadow: -6px 6px 0 #2274A5;
-            box-shadow: -6px 6px 0 #2274A5;
+    padding: 8px 32px 8px 32px;
+    color: #fffae7;
+    border: 2.5px #2274A5 solid;
+    margin-right: 24px;
+    background-color: #2274A5;
   }
   .Container .ProjectSection main .Container .ProjectTwo {
     -webkit-box-orient: horizontal;
@@ -639,11 +639,10 @@ body {
   }
   .Container .AboutMe .Container .Wrapper .Information .Skills div {
     padding: 8px 32px 8px 32px;
-    color: #2274A5;
+    color: #fffae7;
     border: 2.5px #2274A5 solid;
     margin-right: 24px;
-    -webkit-box-shadow: -6px 6px 0 #2274A5;
-            box-shadow: -6px 6px 0 #2274A5;
+    background-color: #2274A5;
   }
   .Container .AboutMe .Container .Wrapper .MyImage {
     width: 100%;

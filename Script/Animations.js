@@ -85,7 +85,7 @@ ScrollReveal().reveal(ScrollAnimationArrayProjects, ScrollAnimation);
 
 //Scroll into view
 ViewProject.addEventListener("click", function(){
-    Offset = 50
+    Offset = 20
     XAxis = ProjectSection.getBoundingClientRect()["x"]
     YAxis = ProjectSection.getBoundingClientRect()["y"]
     scrollTo(XAxis,YAxis - Offset)

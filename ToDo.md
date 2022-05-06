@@ -30,3 +30,4 @@
 - Work on external link button in project section
 - Work on scrollTo view project section bug
 - Footer bug
+- Make skill containers full size on mobile

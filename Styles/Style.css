@@ -201,6 +201,7 @@ body {
   border: 2.5px #2274A5 solid;
   margin-right: 24px;
   background-color: #2274A5;
+  border-radius: 100px;
 }
 
 .Container .AboutMe .Container .Wrapper .MyImage {
@@ -307,6 +308,7 @@ body {
   border: 2.5px #2274A5 solid;
   margin-right: 24px;
   background-color: #2274A5;
+  border-radius: 100px;
 }
 
 .Container .ProjectSection {
@@ -393,6 +395,7 @@ body {
   border: 2.5px #2274A5 solid;
   margin-right: 24px;
   background-color: #2274A5;
+  border-radius: 100px;
 }
 
 .Container .ProjectSection main .Container .ProjectTwo {
@@ -583,6 +586,7 @@ body {
     border: 2.5px #2274A5 solid;
     margin-right: 24px;
     background-color: #2274A5;
+    border-radius: 100px;
   }
   .Container .ProjectSection main .Container .ProjectTwo {
     -webkit-box-orient: horizontal;
@@ -664,6 +668,7 @@ body {
     border: 2.5px #2274A5 solid;
     margin-right: 24px;
     background-color: #2274A5;
+    border-radius: 100px;
   }
   .Container .AboutMe .Container .Wrapper .MyImage {
     width: 100%;

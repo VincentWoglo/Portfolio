@@ -1,0 +1,159 @@
+@use "Fonts";
+@use "Colors";
+
+@import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
+/*Resetting css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    
+    box-sizing: border-box;
+    cursor:url('../../Assets/Images/mourseCircleCursor.png'), auto;
+}
+
+body{
+    font-family: Fonts.$NeueHaasGrotesDisplayPro;
+    background-color: Colors.$RefreshingWhite;
+    font-size: 16px;
+}
+.container{
+    .aboutProjectSectionaboutProject{
+        .aboutProject{
+            margin-top: 64px;
+            .container{
+                max-width: 1284px;
+                width: 89.167%;
+                margin: auto;
+                .imageWrapper{
+                    width: 100%;
+                    .aboutProjectImage{
+                        width: 100%;
+                    }
+                }
+                .informationOnProject{
+                    margin-top: 102px;
+                    padding-bottom: 200px;
+                    .titleWrapper{
+                        .sectionTitle{
+                            font-weight: Fonts.$fontWeight_500;
+                            font-size: Fonts.$fontSize_45;
+                        }
+                        .Line{
+                            border: 1px Colors.$Black solid;
+                            background-color: Colors.$Black;
+                            margin-top: 27px;
+                        }
+                    }
+                    .aboutProjectWrapper{
+                        margin-top: 84px;
+                        .projectDescription{
+                            font-size: Fonts.$fontSize_30;
+                            line-height: 40px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .skillsWrapper{
+                        overflow: hidden;
+                        width: 100%;
+                        margin-top: 116.06px;
+                        .skillsList{
+                            display: flex;
+                            gap: 40px;
+                            align-items: center;
+                            justify-content: space-between;
+                            font-size: Fonts.$fontSize_24;
+                            font-weight: Fonts.$fontWeight_500;
+                            animation: Scroll 10s linear infinite;
+                            animation-duration: 10s;
+                            li{
+                                list-style-type: disc;
+                            }
+                        }
+                        @keyframes Scroll {
+                            0% { transform:  translateX(0); }
+                            100% { transform:  translateX(-100%); }
+                        }
+                    }
+                    .callToActionButtons{
+                        margin-top: 76.5px;
+                        .viewProjectButton, .sourceCodeButton{
+                            padding: 16px 30px;
+                            border: 2px Colors.$DarklessNight solid;
+                            font-size: Fonts.$fontSize_20;
+                            font-weight: Fonts.$fontWeight_500;
+                            text-transform: uppercase;
+                        }
+                        .viewProjectButton{
+                            background-color: Colors.$DarklessNight;
+                            color: Colors.$White;
+                        }
+                        .sourceCodeButton{
+                            margin-left: 44px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 528px) {
+    .container{ 
+        .aboutProjectSectionaboutProject{ 
+            .aboutProject{ 
+                .container{ 
+                    .informationOnProject{
+                        .callToActionButtons{
+                            display: flex;
+                            flex-direction: column;
+                            .viewProjectButton, .sourceCodeButton{
+                                width: 100%;
+                                margin: auto;
+                                text-align: center;
+                            }
+                            .sourceCodeButton{
+                                margin-top: 24PX;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

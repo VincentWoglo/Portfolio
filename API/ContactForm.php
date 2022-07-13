@@ -4,11 +4,6 @@
     
 
     $contact = new Contact;
-    //$contact->createContact();
-    //$contact->getContact();
-    //$contact->alreadyExist();
-    //$contact->contact();
-    //$contact->Test();
     $_SESSION['firstNameInput'] = $_REQUEST["firstNameInput"];
     $_SESSION["submitButton"] = $_REQUEST["submitButton"];
     $_SESSION["emailInput"] = $_REQUEST["emailInput"];
@@ -16,6 +11,13 @@
     $_SESSION["lastNameInput"] = $_REQUEST["lastNameInput"];
     $_SESSION["messageInput"] = $_REQUEST["messageInput"];
     $_SESSION["selectInquiryWrapper"] = $_REQUEST["selectInquiryWrapper"];
+
+    $loader = new \Twig\Loader\FilesystemLoader('../Pages');
+    $twig = new \Twig\Environment($loader);
+
+    echo $twig->render('Shrtnr.html', [
+            'name' => 'Fabien'
+    ]);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +28,7 @@
         <title>Ajax Call</title>
     </head>
     <body>
-        <div class="status" id="status" style="color: red">cxfd</div>
+        <div class="status" id="status" style="color: red"></div>
         <script src="../Script/AjaxRequest.js"></script>
     </body>
 </html>

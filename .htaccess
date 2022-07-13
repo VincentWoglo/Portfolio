@@ -1,0 +1,4 @@
+#Turn on rewrite engine
+RewriteEngine On
+#DirectoryIndex Twig.php
+RewriteRule ^/API$ /yourfile.php [L]

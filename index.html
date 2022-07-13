@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
-    <link rel="stylesheet" href="./Styles/Css/Style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="../Styles/Css/Style.css">
     <title>Koffivi V. Woglo - Portfolio</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
             <nav class="navigation">
                 <div class="container">
                     <div class="logoWrapper">
-                        <img src="./Assets/Images/logo.png" alt="" class="logoImage" />
+                        <img src="../Assets/Images/logo.png" alt="" class="logoImage" />
                     </div>
                     <div class="rightMenuItemWrapper">
                         <ul class="unorderedMenuList">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="rightHeroWrapper">
                             <div class="heroMessageImageWrapper">
-                                <img src="./Assets/Images/heroImage.png" alt="" class="HeroMessageImage" />
+                                <img src="../Assets/Images/heroImage.png" alt="" class="HeroMessageImage" />
 
                             </div>
                         </div>
@@ -60,12 +60,12 @@
                     
                     <div class="slideControllerWrapper" id="customize-controls">
                         <div class="leftSlideController prev" data-controls="prev" aria-controls="customize" tabindex="-1">
-                            <divs class="leftSlideControllerArrowOne"></divs>
-                            <divs class="leftSlideControllerArrowTwo"></divs>
+                            <div class="leftSlideControllerArrowOne"></div>
+                            <div class="leftSlideControllerArrowTwo"></div>
                         </div>
                         <div class="rightSlideController next" data-controls="next" aria-controls="customize" tabindex="-1">
-                            <divs class="rightSlideControllerArrowOne"></divs>
-                            <divs class="rightSlideControllerArrowTwo"></divs>
+                            <div class="rightSlideControllerArrowOne"></div>
+                            <div class="rightSlideControllerArrowTwo"></div>
                         </div>
                     </div>
                     <div class="mouseWheelWrapper" id="start-index">
@@ -74,37 +74,37 @@
                             <h2 class="mouseWheelItemTitle">
                                 01 Newsletter Email
                             </h2>
-                            <img src="./Assets/Images/mouseWheelItemImageOne.png" alt="" class="mouseWheelItemImage">
+                            <img src="../Assets/Images/MicroCenterCouponThumbnail.png" alt="" class="mouseWheelItemImage">
                         </div>
                         <div class="mouseWheelItemTwo">
                             <h2 class="mouseWheelItemTitle">
                                 02 Transaction Email
                             </h2>
-                            <img src="./Assets/Images/mouseWheelItemImageTwo.png" alt="" class="mouseWheelItemImage">
+                            <img src="../Assets/Images/mouseWheelItemImageOne.png" alt="" class="mouseWheelItemImage">
                         </div>
                         <div class="mouseWheelItemThree">
                             <h2 class="mouseWheelItemTitle">
                                 03 Landing Page
                             </h2>
-                            <img src="./Assets/Images/mouseWheelItemImageThree.png" alt="" class="mouseWheelItemImage">
+                            <img src="../Assets/Images/Frame_25.png" alt="" class="mouseWheelItemImage">
                         </div>
                         <div class="mouseWheelItemFour">
                             <h2 class="mouseWheelItemTitle">
-                                04 Example
+                                04 Landing Page
                             </h2>
-                            <img src="./Assets/Images/mouseWheelItemImageOne.png" alt="" class="mouseWheelItemImage">
+                            <img src="../Assets/Images/TCAThumbnail.png" alt="" class="mouseWheelItemImage">
                         </div>
                         <div class="mouseWheelItemFive">
                             <h2 class="mouseWheelItemTitle">
                                 04 Example
                             </h2>
-                            <img src="./Assets/Images/mouseWheelItemImageOne.png" alt="" class="mouseWheelItemImage">
+                            <img src="../Assets/Images/FrontEndThumbnail.png" alt="" class="mouseWheelItemImage">
                         </div>
                         <div class="mouseWheelItemSix">
                             <h2 class="mouseWheelItemTitle">
                                 04 Example
                             </h2>
-                            <img src="./Assets/Images/mouseWheelItemImageOne.png" alt="" class="mouseWheelItemImage">
+                            <img src="../Assets/Images/mouseWheelItemImageOne.png" alt="" class="mouseWheelItemImage">
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                         </div>
                         <div class="rightAboutMeWrapper">
                             <div class="aboutMeImageWrapper">
-                                <img src="./Assets/Images/AboutMeImage.png" alt="" class="aboutMeImage">
+                                <img src="../Assets/Images/AboutMeImage.png" alt="" class="aboutMeImage">
                             </div>
                         </div>
                     </div>
@@ -212,7 +212,10 @@
                                 <a href="emailAddressLink">vincentwoglo@gmail.com</a>
                             </p>
                         </div>
-                        <form class="contactFormWrapper" action="./API/ContactForm.php" method="POST">
+                        <form class="contactFormWrapper" id="contactFormWrapper" method="POST">
+                            <div class="status" id="status" style="color: red; font-weight: bold; font-size: 20px;
+                                                                        margin-bottom: 24px;">
+                            </div>
                             <div class="firstLastNameWrapper">
                                 <div class="firstNameWrapper">
                                     <label for="firstNameInput" class="firstNameLabel">Name *</label> <br />
@@ -253,6 +256,7 @@
                                     <input type="submit" name="submitButton" id="submitButton" class="submitButton" value="Send">
                                 </div>
                             </div>
+                            <p>{{name}}</p>
                         </form>
                     </div>
                 </div>
@@ -261,7 +265,7 @@
         <section class="JoinNewsLetterSection">
             <main class="JoinNewsLetter">
                 <div class="seperatorLine">
-                    <img src="./Assets/Images/separatorLine.png" alt="Seperator Line Image" class="seperatorLineImage">
+                    <img src="../Assets/Images/separatorLine.png" alt="Seperator Line Image" class="seperatorLineImage">
                 </div>
                 <div class="container">
                     <div class="newsLetterWrapper">
@@ -275,7 +279,7 @@
                         <div class="newsLetterFormWrapper">
                             <input type="text" class="newsLetterFormEmail" placeholder="vincentwoglo@gmail.com">
                             <button type="button" class="newsLetterFormButton">
-                                <img src="./Assets/Images/submitButtonArrow.png" alt="Newsletter Button Image" class="newsLetterFormButtonImage">
+                                <img src="../Assets/Images/submitButtonArrow.png" alt="Newsletter Button Image" class="newsLetterFormButtonImage">
                             </button>
                         </div>
                         <p class="newsLetterFormNotice">
@@ -290,7 +294,7 @@
                 <div class="container">
                     <div class="logoCopyRightWrapper">
                         <div class="footerLogoWrapper">
-                            <img src="./Assets/Images/logo.png" alt="Footer Logo Image" class="footerLogoImage" />
+                            <img src="../Assets/Images/logo.png" alt="Footer Logo Image" class="footerLogoImage" />
                         </div>
                         <div class="copyRightWrapper">
                             <p class="copyRight">
@@ -299,19 +303,18 @@
                         </div>
                     </div>
                     <div class="footerSocialMedia">
-                        <img src="./Assets/Images/facebook.png" alt="" class="facebook">
-                        <img src="./Assets/Images/twitter.png" alt="" class="twitter">
-                        <img src="./Assets/Images/dribbble.png" alt="" class="dribble">
+                        <img src="../Assets/Images/facebook.png" alt="" class="facebook">
+                        <img src="../Assets/Images/twitter.png" alt="" class="twitter">
+                        <img src="../Assets/Images/dribbble.png" alt="" class="dribble">
                     </div>
                 </div>
             </footer>
         </section>
-        <div class="status" id="status" style="color: red">cxfd</div>
         <script src="../Script/AjaxRequest.js"></script>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
-    <script src="./Script/MouseWheelCarousel.js"></script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+    <script src="../Script/MouseWheelCarousel.js"></script>
 </body>
 </html>

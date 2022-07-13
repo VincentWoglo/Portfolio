@@ -3,17 +3,12 @@
     require_once('../vendor/autoload.php');
     use API\ContactForm;
     session_start();
-    //USe sessions to get the get request
+    error_reporting(0);
     class contact
     {
-        // private $apiKey;
-        // function __construct($apiKey)
-        // {
-        //     $this->apiKey = "";
-        // }
         
         function contact(){
-            if( isset($_SESSION["submitButton"] ) ){
+            if( isset($_REQUEST["submitButton"] ) ){
                 $createContact = new contact;
                 //check if email exist
                 //if not then run createContact()
@@ -22,7 +17,7 @@
         }
 
         function createContact(){
-            https://stackoverflow.com/questions/27875405/invalid-mailchimp-api-key-in-mailchimp-export-api
+            //https://stackoverflow.com/questions/27875405/invalid-mailchimp-api-key-in-mailchimp-export-api
 
             $mailchimp = new \MailchimpMarketing\ApiClient();
 
@@ -32,11 +27,11 @@
             ] );
             $list_id = "a934548160";
 
-            $EMAIL = $_SESSION["emailInput"];
-            $FIRSTNAME = $_SESSION["firstNameInput"];
-            $LASTNAME = $_SESSION["lastNameInput"];
-            $MESSAGE = $_SESSION["messageInput"];
-            $INQUIRY = $_SESSION["selectInquiryWrapper"];
+            $EMAIL = $_REQUEST["emailInput"];
+            $FIRSTNAME = $_REQUEST["firstNameInput"];
+            $LASTNAME = $_REQUEST["lastNameInput"];
+            $MESSAGE = $_REQUEST["messageInput"];
+            $INQUIRY = $_REQUEST["selectInquiryWrapper"];
             try {
                 $response = $mailchimp->lists->addListMember ($list_id, [
                     "email_address" => $EMAIL,
@@ -48,10 +43,12 @@
                     "INQUIRY" => $INQUIRY
                     ]
                 ] );
-                print_r(json_encode( $response ));
-            } catch ( MailchimpMarketing\ApiException $e ) {
-                echo $e->getMessage();
-            }
+
+                if($response){ echo "Stored"; }
+                else{ echo "Not stored"; }
+                //print_r(json_encode( $response ));
+                //https://www.educba.com/php-custom-exception/
+            } catch ( \MailchimpMarketing\ApiClient $exception ) { echo 'Caugght:'.$exception->getMessage(); }
         
         }
         //Get all the email that already exist
@@ -69,8 +66,8 @@
             $response = $client->lists->getListMembersInfo( $list_id );
             //Loop through to get user's email and compare it with the input
             for( $Increment = 0; $Increment<count( $response->members ); $Increment++ ){
-                $allMailChimpEmails =  $response->members[ $Increment ]->email_address;
-                array_push( $existingEmails, $allMailChimpEmails );
+                 $allMailChimpEmails =  $response->members[ $Increment ]->email_address;
+                 array_push( $existingEmails, $allMailChimpEmails );
             }
             //returned all the emails that exist in MailChimp in an arrays;
             return $existingEmails;
@@ -79,8 +76,8 @@
 
         function alreadyExist(){
             //Resources: https://w3codegenerator.com/article/validate-list-of-email-addresses-in-javascript
-            if( isset($_SESSION["submitButton"]) ){
-                $EMAIL = $_SESSION["emailInput"];
+            //if( isset($_REQUEST["submitButton"]) ){
+                $EMAIL = $_REQUEST["emailInput"];
                 $contact = new contact;
                 $existingEmails = $contact->getContact();
                 $error = [];
@@ -89,7 +86,9 @@
                     array_push( $error, "Sorry ".$EMAIL." already exist");
                     //Send ajax message to the front-end saying email already exist
                 }else{
-                    array_push( $error, "Email doesn't exist yet");
+                    array_push( $error, "Your message has been sent!");
+                    $contact = new contact;
+                    $contact->createContact();
                     //Call createCofntact() here if the email doesn't exist
                     //Send ajax message to the front end for confirmation of sent email
                     //Or redirect the user to another page. Same for the Email collection near footer
@@ -97,16 +96,9 @@
 
                 //Resources: https://www.geeksforgeeks.org/how-to-get-return-text-from-php-file-with-ajax/
                 echo $error[0];
-            }
-        }
-        function Test(){
-            echo "dsjkfhjkdfj";
-            echo $_SESSION["submitButton"];
+            //}
         }
     }
     $contact = new contact;
-    //$contact->createContact();
-    //$contact->getContact();
     $contact->alreadyExist();
-    //$contact->Test();
 ?>

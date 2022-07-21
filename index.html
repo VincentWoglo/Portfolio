@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <link rel="stylesheet" href="../Styles/Css/Style.css">
+    <link rel="stylesheet" href="./Styles/Css/Style.css">
     <title>Koffivi V. Woglo - Portfolio</title>
 </head>
 <body>
@@ -15,14 +15,14 @@
             <nav class="navigation">
                 <div class="container">
                     <div class="logoWrapper">
-                        <img src="../Assets/Images/logo.png" alt="" class="logoImage" />
+                        <img src="./Assets/Images/logo.png" alt="" class="logoImage" />
                     </div>
                     <div class="rightMenuItemWrapper">
                         <ul class="unorderedMenuList">
-                            <li class="work">Work</li>
-                            <li class="about">About</li>
-                            <li class="contact">Contact</li>
-                            <li class="other">Other</li>
+                            <li class="work" id="work">Work</li>
+                            <li class="about" id="about">About</li>
+                            <li class="contact" id="contact">Contact</li>
+                            <li class="other" id="other">Other</li>
                         </ul>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                         </div>
                         <div class="rightHeroWrapper">
                             <div class="heroMessageImageWrapper">
-                                <img src="../Assets/Images/heroImage.png" alt="" class="HeroMessageImage" />
+                                <img src="./Assets/Images/heroImage.png" alt="" class="HeroMessageImage" />
 
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                 </div>
             </main>
         </section>
-        <section class="projectSection">
+        <section class="projectSection" id="projectSection">
             <main class="projects">
                 <div class="container">
                     <div class="projectSectionTitleWrapper">
@@ -74,44 +74,46 @@
                             <h2 class="mouseWheelItemTitle">
                                 01 Newsletter Email
                             </h2>
-                            <img src="../Assets/Images/MicroCenterCouponThumbnail.png" alt="" class="mouseWheelItemImage">
+                            <img src="./Assets/Images/MicroCenterCouponThumbnail.png" alt="" class="mouseWheelItemImage">
                         </div>
                         <div class="mouseWheelItemTwo">
                             <h2 class="mouseWheelItemTitle">
-                                02 Transaction Email
+                                02 Full-Stack App
                             </h2>
-                            <img src="../Assets/Images/mouseWheelItemImageOne.png" alt="" class="mouseWheelItemImage">
+                            <img src="./Assets/Images/mouseWheelItemImageOne.png" alt="" class="mouseWheelItemImage">
                         </div>
-                        <div class="mouseWheelItemThree">
-                            <h2 class="mouseWheelItemTitle">
-                                03 Landing Page
-                            </h2>
-                            <img src="../Assets/Images/Frame_25.png" alt="" class="mouseWheelItemImage">
-                        </div>
+                        <a href="https://eloquent-taiyaki-f217cd.netlify.app/" target="_blank">
+                            <div class="mouseWheelItemThree">
+                                <h2 class="mouseWheelItemTitle">
+                                    03 Landing Page
+                                </h2>
+                                <img src="./Assets/Images/Frame_25.png" alt="" class="mouseWheelItemImage">
+                            </div>
+                        </a> 
                         <div class="mouseWheelItemFour">
                             <h2 class="mouseWheelItemTitle">
                                 04 Landing Page
                             </h2>
-                            <img src="../Assets/Images/TCAThumbnail.png" alt="" class="mouseWheelItemImage">
+                            <img src="./Assets/Images/TCAThumbnail.png" alt="" class="mouseWheelItemImage">
                         </div>
                         <div class="mouseWheelItemFive">
                             <h2 class="mouseWheelItemTitle">
                                 04 Example
                             </h2>
-                            <img src="../Assets/Images/FrontEndThumbnail.png" alt="" class="mouseWheelItemImage">
+                            <img src="./Assets/Images/FrontEndThumbnail.png" alt="" class="mouseWheelItemImage">
                         </div>
                         <div class="mouseWheelItemSix">
                             <h2 class="mouseWheelItemTitle">
-                                04 Example
+                                04 Transaction Email
                             </h2>
-                            <img src="../Assets/Images/mouseWheelItemImageOne.png" alt="" class="mouseWheelItemImage">
+                            <img src="./Assets/Images/mouseWheelItemImageOne.png" alt="" class="mouseWheelItemImage">
                         </div>
                     </div>
                 </div>
             </main>
         </section>
 
-        <section class="aboutMeSection">
+        <section class="aboutMeSection" id="aboutMeSection">
             <main class="aboutMe">
                 <div class="container">
                     <div class="aboutMeSectionTitleWrapper">
@@ -137,7 +139,7 @@
                         </div>
                         <div class="rightAboutMeWrapper">
                             <div class="aboutMeImageWrapper">
-                                <img src="../Assets/Images/AboutMeImage.png" alt="" class="aboutMeImage">
+                                <img src="./Assets/Images/AboutMeImage.png" alt="" class="aboutMeImage">
                             </div>
                         </div>
                     </div>
@@ -192,7 +194,7 @@
             </main>
         </section>
 
-        <section class="sayHelloSection">
+        <section class="sayHelloSection" id="sayHelloSection">
             <main class="sayHello">
                 <div class="container">
                     <div class="aboutMeSectionTitleWrapper">
@@ -262,10 +264,10 @@
                 </div>
             </main>
         </section>
-        <section class="JoinNewsLetterSection">
+        <section class="JoinNewsLetterSection" id="JoinNewsLetterSection">
             <main class="JoinNewsLetter">
                 <div class="seperatorLine">
-                    <img src="../Assets/Images/separatorLine.png" alt="Seperator Line Image" class="seperatorLineImage">
+                    <img src="./Assets/Images/separatorLine.png" alt="Seperator Line Image" class="seperatorLineImage">
                 </div>
                 <div class="container">
                     <div class="newsLetterWrapper">
@@ -279,7 +281,7 @@
                         <div class="newsLetterFormWrapper">
                             <input type="text" class="newsLetterFormEmail" placeholder="vincentwoglo@gmail.com">
                             <button type="button" class="newsLetterFormButton">
-                                <img src="../Assets/Images/submitButtonArrow.png" alt="Newsletter Button Image" class="newsLetterFormButtonImage">
+                                <img src="./Assets/Images/submitButtonArrow.png" alt="Newsletter Button Image" class="newsLetterFormButtonImage">
                             </button>
                         </div>
                         <p class="newsLetterFormNotice">
@@ -294,7 +296,7 @@
                 <div class="container">
                     <div class="logoCopyRightWrapper">
                         <div class="footerLogoWrapper">
-                            <img src="../Assets/Images/logo.png" alt="Footer Logo Image" class="footerLogoImage" />
+                            <img src="./Assets/Images/logo.png" alt="Footer Logo Image" class="footerLogoImage" />
                         </div>
                         <div class="copyRightWrapper">
                             <p class="copyRight">
@@ -303,18 +305,19 @@
                         </div>
                     </div>
                     <div class="footerSocialMedia">
-                        <img src="../Assets/Images/facebook.png" alt="" class="facebook">
-                        <img src="../Assets/Images/twitter.png" alt="" class="twitter">
-                        <img src="../Assets/Images/dribbble.png" alt="" class="dribble">
+                        <img src="./Assets/Images/facebook.png" alt="" class="facebook">
+                        <img src="./Assets/Images/twitter.png" alt="" class="twitter">
+                        <img src="./Assets/Images/dribbble.png" alt="" class="dribble">
                     </div>
                 </div>
             </footer>
         </section>
-        <script src="../Script/AjaxRequest.js"></script>
+        <script src="./Script/AjaxRequest.js"></script>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
-    <script src="../Script/MouseWheelCarousel.js"></script>
+    <script src="./Script/MouseWheelCarousel.js"></script>
+    <script src="./Script/ScrollAnimations.js"></script>
 </body>
 </html>

@@ -29,6 +29,7 @@ class ComposerStaticInitbdacfe0df9d073963983ca98359afad7
         array (
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
+            'Phroute\\Phroute\\' => 16,
         ),
         'M' => 
         array (
@@ -67,6 +68,10 @@ class ComposerStaticInitbdacfe0df9d073963983ca98359afad7
         'Psr\\Http\\Client\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
+        ),
+        'Phroute\\Phroute\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phroute/phroute/src/Phroute',
         ),
         'MailchimpMarketing\\' => 
         array (

@@ -4,7 +4,7 @@ let ajaxPost = (e)=>{
     e.preventDefault()
     let formInputs = document.getElementById("contactFormWrapper");
     let xhr = new XMLHttpRequest()
-    let fileUrl = "../API/Contact.php"
+    let fileUrl = "./API/Contact.php"
     let data = new FormData(formInputs);
     console.log(data)
 

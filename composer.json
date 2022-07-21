@@ -1,9 +1,13 @@
 {
     "require": {
         "mailchimp/marketing": "^3.0",
-        "twig/twig": "^3.0"
+        "twig/twig": "^3.0",
+        "phroute/phroute": "^2.2"
     },
     "autoload": {
-        "psr-4": {"API\\": "API"}
+        "psr-4": {
+            "API\\": "API",
+            "Portfolio": "./"
+        }
     }
 }

@@ -1,4 +1,22 @@
 #Turn on rewrite engine
 RewriteEngine On
+
+RewriteBase /
+
 #DirectoryIndex Twig.php
-RewriteRule ^/API$ /yourfile.php [L]
+
+#Options +MultiViews
+#RewriteEngine On
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+) $1.php [NC,L]
+
+#RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+#RewriteRule ^ /%1 [R=301,NE,L]
+
+#<IfModule mod_alias.c>
+  # Redirect to a URL on a different host
+#  Redirect "/Portfolio-V4.0.0/" "/API/"
+#</IfModule>
+#http://localhost/Portfolio-V4.0.0
+DirectoryIndex index.php

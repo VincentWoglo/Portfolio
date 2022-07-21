@@ -44,6 +44,7 @@ table {
     
     box-sizing: border-box;
     cursor:url('../../Assets/Images/mourseCircleCursor.png'), auto;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -71,13 +72,11 @@ body{
                     .unorderedMenuList{
                         display: flex;
                         align-items: center;
+                        column-gap: 27.35px;
                         cursor: pointer;
                         .work, .about, .contact, .other{
                             font-size: Fonts.$fontSize_24;
                             font-weight: Fonts.$fontWeight_500;
-                        }
-                        .about, .contact, .other{
-                            margin-left: 27.35px;
                         }
                     }
                 }

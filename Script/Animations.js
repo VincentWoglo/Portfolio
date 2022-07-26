@@ -14,7 +14,7 @@ gsap.from(Hero, {
     duration: .15,
     y:-50,
     stagger: 1,
-    delay: 1.5,
+    delay: .5,
     ease: Power2.easeIn
 })
 gsap.from(PassionateText, {

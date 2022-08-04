@@ -1725,6 +1725,18 @@ span.bar-icon::after {
 
 
 /* Skill Section */
+.skills-wrapper .skills{
+	border: 1px white solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+.skills-container .skills-wrapper .skills img{
+	width: 50px;
+	height: 50px;
+}
 .single-skill i {
     font-size: 36px;
     margin-bottom: 15px;

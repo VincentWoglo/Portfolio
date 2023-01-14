@@ -1681,11 +1681,23 @@ span.bar-icon::after {
 }
 
 /* About Section */
+.blue-bg{
+	background-color: #003663;
+}
+.white-bg{
+	background-color: #ffffff;
+}
+.color-white{
+	color: #ffffff;
+}
+.color-blue{
+	color: #003663;
+}
 .about-area .mlr-minus {
 	margin-left: -20px;
 }
 .about-area .my-img {
-	background-color: #003663;
+	background-color: #ffffff /*#003663*/;
 	background-image: url("../img/icons/pattern.png");
 	margin-right: 20px;
 	margin-top: -20px;

@@ -3,14 +3,18 @@
 
 [[redirects]]
   from = "/index-dark"
-  to = "/new-path"
+  to = "/404"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-details"
-  to = "/blog"
+  to = "/404"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/blog-details-dark"
-  to = "/blog"
+  to = "/404"
+  status = 301
+  force = true

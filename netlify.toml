@@ -1,16 +1,2 @@
 [build.processing.html]
   pretty_urls = true
-
-[[redirects]]
-  from = "/index-dark"
-  to = "/new-path"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/blog-details"
-  to = "/blog"
-
-[[redirects]]
-  from = "/blog-details-dark"
-  to = "/blog"

@@ -1,0 +1,40 @@
+.bg-color-black {
+    background-color: #111111;
+}
+.mt-25 {
+    margin-top: 25%;
+}
+.color-reset {
+    color: unset !important;
+}
+.container-sm {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.not-found-header {
+    color: rgba(0,0,0,.3);
+    fill: rgba(0,0,0,.3);
+    font-size: 248px;
+}
+
+.not-found-subheader, .not-found-description {
+    color: #000;
+}
+
+.not-found-description {
+    max-width: 60%;
+}
+
+.take-me-home-btn {
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.take-me-home-btn:hover {
+    color: #000;
+}

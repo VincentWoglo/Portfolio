@@ -1,3 +1,20 @@
 [build.processing.html]
   pretty_urls = true
-  pretty_urls = true
+
+[[redirects]]
+  from = "/index-dark"
+  to = "/404"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-details"
+  to = "/404"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-details-dark"
+  to = "/404"
+  status = 301
+  force = true

@@ -240,3 +240,61 @@
 .link-color {
     color: #0666b4 !important;
 }
+
+/* Cookie banner */
+aside .cookie-banner-section {
+    position: fixed;
+    z-index: 9997483647;
+    background-color: #ffffff;
+    border-top: 1px #111111 solid;
+    bottom: 0;
+    width: 100%;
+}
+
+aside .cookie-banner-section .container {
+    padding: 32px 0;
+}
+
+aside .cookie-banner-section .container a {
+    color: #3f3f3f;
+    text-decoration: underline;
+}
+
+aside .cookie-banner-section .container .action-btn-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-top: 20px;
+}
+
+
+aside .cookie-banner-section .container .action-btn-wrapper a {
+    padding: 16px;
+    background-color: #111111;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+@media only screen and (max-width: 601px) {
+    .container {
+        padding: ;
+    }
+    aside .cookie-banner-section .container .action-btn-wrapper {
+        flex-direction: column;
+        column-gap: unset;
+        row-gap: 16px;
+    }
+
+    aside .cookie-banner-section .container .action-btn-wrapper a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    aside .cookie-banner-section .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

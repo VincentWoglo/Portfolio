@@ -18,6 +18,9 @@
 		<link rel="stylesheet" href="style.css">
 		<!-- modernizr js -->
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+		<!-- Iconify icons -->
+		<script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
 	    <!-- Start of Async Drift Code -->
 	<script>
 	"use strict";
@@ -94,6 +97,24 @@
 				<span class="cp-preloader__letter" data-preloader="G">G</span>
 			</div>
 		</div>
+
+		<!-- Schedule an appointment midal -->
+		<aside class="appointment-model">
+			<div class="appointment-modal-exit-btn">
+				<iconify-icon class="exit-icon" height="36" style="color: #ffffff;" icon="carbon:close-filled"></iconify-icon>
+			</div>
+			<div class="container">
+				<h2>Let's have a chat</h2>
+				<p class="t-white mt-24px">
+					Schedule a 15 minute zoom call with me to see if we could a be a great fit to work together.
+				</p>
+				<div class="row">
+					<button class="contact-schedule-call-btn" type="submit" name="submit" id="contact_submit" data-complete-text="Well done!">
+						Schedule a call
+					</button>
+				</div>
+			</div>
+		</aside>
 		
 		<div id="home"></div>
 		<!-- Header Section Start -->
@@ -307,7 +328,7 @@ I worked with a team of 3 total to design the website UI and turn that UI into a
 						<div class="portfolio-menu text-center">
 							<ul class="clearfix mb-40">
 								<li data-filter="*" class="active">All</li>
-								<li data-filter=".develop">development</li>
+								<li data-filter=".develop">Wordpress</li>
 								<li data-filter=".print">Email Marketing</li>
 								<!-- <li data-filter=".web">Ui/Ux</li> -->
 								<!--<li data-filter=".web">web design</li>
@@ -320,7 +341,7 @@ I worked with a team of 3 total to design the website UI and turn that UI into a
 						<div class="portfolio-grid masonry-grid">
 							<div class="grid-item develop percent-33">
 								<div class="single-portfolio overlay overlay-2">
-									<img src="assets/img/portfolio/cytokinetics-thumbnail.png" alt="Cytokinetics website thumbnail" />
+									<img src="assets/img/portfolio/Cytokinetics-Thumbnail-371x420.png" alt="Cytokinetics website thumbnail" />
 									<a class="venobox" data-gall="gall-img" target="_blank" href="https://cytokinetics.com/">
 										<img src="assets/img/icons/plus.png" alt="Plus Icon" />
 									</a>
@@ -346,7 +367,7 @@ I worked with a team of 3 total to design the website UI and turn that UI into a
 							<!-- Item End -->
 							<div class="grid-item develop percent-33">
 								<div class="single-portfolio overlay overlay-2">
-									<img src="assets/img/portfolio/Group 427321668.png" alt="Mearts" />
+									<img src="assets/img/portfolio/QEDtx-Thumnail-371x496.png" alt="Mearts" />
 									<a class="venobox" data-gall="gall-img" target="_blank" href="https://qedtx.com/">
 										<img src="assets/img/icons/plus.png" alt="Plus Icon" />
 									</a>
@@ -411,7 +432,7 @@ I worked with a team of 3 total to design the website UI and turn that UI into a
 							<!-- Item End -->
 							<div class="grid-item develop percent-33">
 								<div class="single-portfolio overlay overlay-2">
-									<img src="assets/img/portfolio/Group 427321672 (1).png" alt="Mearts" />
+									<img src="assets/img/portfolio/Christopher-Reeve-Thumbnail-371x342.png" alt="Mearts" />
 									<a class="venobox" data-gall="gall-img" target="_blank" href="https://www.christopherreeve.org/">
 										<img src="assets/img/icons/plus.png" alt="Plus Icon" />
 									</a>
@@ -429,7 +450,7 @@ I worked with a team of 3 total to design the website UI and turn that UI into a
 		</div>
 		<!-- Portfolio Section End -->
 		<!-- Blogs section -->
-		<div class="blog-section bg-color-black">
+		<!-- <div class="blog-section bg-color-black">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-center">
@@ -438,69 +459,44 @@ I worked with a team of 3 total to design the website UI and turn that UI into a
 							<div class="card-wrapper">
 								<div class="card">
 									<img src="./assets/img/blog/Thumbnail-Makers.png" alt="" class="">
-									<h2 class="card-title"><a href="">Title of the blog goes here</a</h2>
+									<h2 class="card-title"><a href="/blogs/article.html">Title of the blog goes here</a</h2>
 								</div>
 								<div class="card">
 									<img src="./assets/img/blog/Thumbnail-Makers.png" alt="" class="">
-									<h2 class="card-title"><a href="">Title of the blog goes here</a</h2>
+									<h2 class="card-title"><a href="/blogs/article.html">Title of the blog goes here</a</h2>
 								</div>
 								<div class="card">
 									<img src="./assets/img/blog/Thumbnail-Makers.png" alt="" class="">
-									<h2 class="card-title"><a href="">Title of the blog goes here</a></h2>
+									<h2 class="card-title"><a href="/blogs/article.html">Title of the blog goes here</a></h2>
 								</div>
 							</div>
 
-							<h3 class="view-all-blogs"><a href="" class="">View All Blogs</a></h3>
+							<h3 class="view-all-blogs"><a href="/blogs" class="">View All Blogs</a></h3>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- End of Blogs section -->
 		<!-- Contact Section Start -->
 		<div id="contact" class="contact-area theme-bg section-padding" data-rt-offset="215%">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-center">
-						<div class="heading white mb-75">
+						<div class="heading white mb-60">
 							<h1>Contact Me</h1>
-							<p>Thank you for considering working with me. Please use the following fields or <br />email to get in touch with me</p>
+							<p>Thank you for considering me as a potential candidate. Would love to learn how I <br/>can help your business</p>
 						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-4 mobi-mb-30">
-						<div class="contact-info">
-							<ul>
-								<li>
-									<i class="icon-envelope"></i>
-									<div class="text">
-										<a href="">KoffiviWoglo.com</a> <br />
-										<a href="mailto:vincentwoglo@gmail.com">vincentwoglo@gmail.com</a>
-									</div>
-								</li>
-							</ul>
+						<div class="email-contact">
+							<i class="icon-envelope envelope-icon"></i> <br>
+							<a href="mailto:vincentwoglo@gmail.com">vincentwoglo@gmail.com</a>
+
 						</div>
-					</div>
-					<div class="col-xs-12 col-sm-8">
-						<div class="contact-form">
-							<form class="custom-input contact_form" id="contact_form" action="contact-form.php" method="post">
-								<div class="row">
-									<div class="col-xs-12 col-sm-4 pr-5">
-										<input type="text" id="contact_name" name="name" placeholder="Your Name" required />
-									</div>
-									<div class="col-xs-12 col-sm-4 pr-5 pl-5">
-										<input type="email" id="contact_email" name="email" placeholder="Email Address" required />
-									</div>
-									<div class="col-xs-12 col-sm-4 pl-5">
-										<input type="text" id="contact_subject" name="subject" placeholder="Subject" />
-									</div>
-								</div>
-								<textarea name="message" id="contact_message" rows="2" placeholder="Your Message"></textarea>
-								<button class="btn white" type="submit" name="submit" id="contact_submit" data-complete-text="Well done!">
-									Send Message
-								</button>
-							</form>
+
+						<div class="row">
+							<button class="contact-schedule-call-btn" type="submit" name="submit" id="contact_submit" data-complete-text="Well done!">
+								Schedule a call
+							</button>
 						</div>
 					</div>
 				</div>

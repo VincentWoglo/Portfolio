@@ -718,7 +718,7 @@ h6 {
 /* background image 
 ==================================*/
 .header-bg{
-	background-image: url("../img/bg/header.jpg") ;
+	/* background-image: url("../img/bg/header.jpg") ; */
 	background-size: cover;
 	background-attachment: scroll;
 	background-position: center center;
@@ -1480,6 +1480,7 @@ header .logo {
 	width: 160px;
 }
 header.fixed {
+	background-color: #1A1A1A;
     left: 0;
     top: 0;
     width: 100%;
@@ -2479,7 +2480,7 @@ body.black-bg{
 #scrollUp {
 	background-color: #003663;
 	border-radius: 50%;
-	bottom: 81px;
+	bottom: 116px; /*81px; */
 	-webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 	        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 	height: 40px;
@@ -2501,8 +2502,8 @@ body.black-bg{
 /* Screen Support */
 @media (max-width: 767px){
 	#scrollUp {
-		bottom: 20px;
-		right: 5px;
+		bottom: 90px;
+		right: 25px;
 	}
 }
 

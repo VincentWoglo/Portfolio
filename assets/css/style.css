@@ -1480,7 +1480,7 @@ header .logo {
 	width: 160px;
 }
 header.fixed {
-	background-color: #1A1A1A;
+	/* background-color: #1A1A1A; */
     left: 0;
     top: 0;
     width: 100%;

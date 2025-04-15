@@ -1,9 +1,35 @@
 .bg-color-black {
     background-color: #111111;
 }
+
+.color-black {
+    color: #000;
+}
+
+.t-white {
+    color: #ffffff;
+}
+
 .mt-25 {
     margin-top: 25%;
 }
+
+.mt-24px {
+    margin-top: 24px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.m-auto {
+    margin: auto;
+}
+
 .color-reset {
     color: unset !important;
 }
@@ -39,6 +65,181 @@
     color: #000;
 }
 
+/* Blog section */
+
+.blog-section {
+    padding-top: 80px;
+}
+
+.blog-section .card-wrapper {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 44px;
+}
+
+.card-wrapper .card {
+    width: 100%;
+}
+
+.card-wrapper .card h2 {
+    text-align: left;
+}
+.card-wrapper .card h2 a {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+.view-all-blogs {
+    margin-top: 24px;
+}
+.view-all-blogs a {
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* Blogs page */
+.blog-cards-section {
+    margin-top: 164px;
+}
+
+.blog-cards-section .blogs-card {
+    display: flex;
+    border: 1px rgb(195, 195, 195) solid;
+    max-width: 800px;
+    margin-bottom: 24px;
+}
+
+.blog-cards-section .blogs-card img {
+    max-width: 250px;
+    object-fit: cover;
+}
+
+.blog-cards-section .blogs-card h2 {
+    font-size: 24px;
+}
+
+
+.blog-cards-section .blogs-card .blogs-information {
+    padding: 20px;
+}
+
+.blog-cards-section .blogs-card .blogs-information p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+/* contact section - Homepage */
+.envelope-icon {
+    color: #ffffff;
+    font-size: 26px;
+    width: 50px;
+}
+
+.email-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-schedule-call-btn {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #ffffff;
+    color: #003663;
+    font-size: 16px;
+    height: 48px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    padding: 0 25px;
+    border: 0 none;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-schedule-call-btn:hover {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+
+
+/* Schedule an appointment modal */
+.appointment-model {
+    position: fixed;
+    z-index: 3147483647;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #0a0a0a4e;
+    height: 100vh;
+    display: none;
+
+
+}
+.appointment-model .container {
+    width: 50%;
+    padding: 32px 26px 32px;
+    background-color: #003663;
+    /* z-index: 4247483647; */
+    top: 20%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.appointment-model .container h2 {
+    text-align: center;
+    margin: auto;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.appointment-modal-exit-btn {
+    position: relative;
+    top: 18%;
+    left: 25%;
+    z-index: 93412312155656343;
+}
+
+.appointment-modal-exit-btn iconify-icon {
+    cursor: pointer;
+}
+
+.padding-top-40px {
+    padding-top: 40px !important;
+}
+.padding-bottom-40px {
+    padding-bottom: 40px !important;
+}
+
+.margin-top-30px {
+    margin-top: 30px !important;
+}
+
+.color-reset {
+    color: unset !important;
+}
+
+.link-color {
+    color: #0666b4 !important;
+}
 
 /* Cookie banner */
 aside .cookie-banner-section {

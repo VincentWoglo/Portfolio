@@ -1,0 +1,15 @@
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.theme-bg-primary {
+    background: #003663;
+}
+
+.btn-primary {
+    background: #003663;
+}
+
+.form-section {
+    margin-bottom: 3em !important;
+}

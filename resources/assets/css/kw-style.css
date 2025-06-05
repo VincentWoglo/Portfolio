@@ -13,3 +13,8 @@
 .form-section {
     margin-bottom: 3em !important;
 }
+
+
+.author-section .author-pic {
+    border-radius: 100%;
+}

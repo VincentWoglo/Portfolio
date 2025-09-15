@@ -239,10 +239,34 @@ hr {
     .nav-cta-btn{
         font-size: 16px !important;
     }
+
+    .google-review-screenshot-image {
+        max-width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 680px)
 {
+    .container {
+        padding: 0 40px;
+    }
+
+    h2 {
+        font-size: 28px !important;
+    }
+
+    h3 {
+        font-size: 24px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    .faq-card-title, button, a {
+        font-size: 16px !important;
+    }
+
     .m-top-navigation-container {
         flex-direction: column;
         row-gap: 20px;
@@ -256,12 +280,24 @@ hr {
         margin-top: 64px !important;
     }
 
-    .about-me-section {
-        padding: 64px !important;
-    }
+    /* .about-me-section {
+        padding: 80px 0 !important;
+    } */
 
     .container {
         max-width: 500px !important;
+    }
+
+    /* .about-me-section {
+        padding: 64px !important;
+    } */
+
+    .about-me-section .container .about-me-section-p1, .about-me-section .container .about-me-section-p2, .about-me-section .container .about-me-section-p3, .about-me-section .container .about-me-section-p4 {
+        max-width: 100% !important;
+    }
+
+    .copyright, .privacy-terms a, .our-mission, .disclaimer {
+        font-size: 12px !important;
     }
 }
 
@@ -383,8 +419,8 @@ hr {
                 </div>
 
                 <p class="about-me-section-p4"  style="max-width: 40%; font-size: 20px; line-height: 150%; margin: auto; margin-top: 24px;">Some things my clients have said about my agency:</p>
-                <img src="./images/Screenshot 2025-08-25 at 9.34.01 AM 2.png" alt="" style="max-width: 70%; width: 100%; display: flex; margin: auto; margin-top: 24px;">
-                <img src="./images/Screenshot 2025-08-25 at 9.34.01 AM 3.png" alt="" style="max-width: 70%; width: 100%; display: flex; margin: auto; margin-top: 24px;">
+                <img src="./images/Screenshot 2025-08-25 at 9.34.01 AM 2.png" alt="" class="google-review-screenshot-image" style="max-width: 70%; width: 100%; display: flex; margin: auto; margin-top: 24px;">
+                <img src="./images/Screenshot 2025-08-25 at 9.34.01 AM 3.png" alt="" class="google-review-screenshot-image" style="max-width: 70%; width: 100%; display: flex; margin: auto; margin-top: 24px;">
 
                 <a href="https://buy.stripe.com/14AeVc5Sv9xee3K85X8N200" style="text-decoration: none; display:contents;"><button style="font-size: 20px; cursor: pointer; display: flex; margin: auto; margin-top: 32px; border-radius: 10px; text-align: center; padding: 20px 62px; background-color: #115FFF; border: 1px #115FFF solid; color: #ffffff; font-weight: 700; text-transform: uppercase;"> <img src="./images/cart-shopping-fast-svgrepo-com 1.svg" alt="" class="" style="max-width: 24px; margin-right: 8px;"> Yes, I Want To Close My First Client!</button></a>
             </div>

@@ -50,6 +50,139 @@ b {
     font-weight: 700;
 }
 
+h1 {
+  font-size: 4.6875rem;
+  /* fallback font size */
+  font-size: clamp(3.125rem, calc(2.6786rem + 2.2321vw), 4.6875rem);
+  /* for browsers that support clamp() */
+  font-size: min(4.6875rem, max(3.125rem, calc(2.6786rem + 2.2321vw)));
+  /* for browsers that support calc() and min() */
+  margin: 0 auto 1rem auto;
+  line-height: 1.2;
+}
+
+h1.page__title {
+  font-size: 1.75rem;
+  /* fallback font size */
+  font-size: max(1.75rem, calc(1.5rem + 1.25vw));
+  /* for browsers that support calc() */
+  font-size: min(2.625rem, max(1.75rem, calc(1.5rem + 1.25vw)));
+  /* for browsers that support both calc() and min() */
+  margin: 0 0 1.8rem 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  /* fallback font size */
+  font-size: max(1.75rem, calc(1.5rem + 1.25vw));
+  /* for browsers that support calc() */
+  font-size: min(2.625rem, max(1.75rem, calc(1.5rem + 1.25vw)));
+  /* for browsers that support both calc() and min() */
+  margin: 0 0 1.8rem 0;
+}
+
+h3 {
+  font-size: 1rem;
+  /* fallback font size */
+  font-size: max(1rem, calc(0.8571rem + 0.7143vw));
+  /* for browsers that support calc() */
+  font-size: min(1.5rem, max(1rem, calc(0.8571rem + 0.7143vw)));
+  /* for browsers that support both calc() and min() */
+  letter-spacing: -0.002916666666667em;
+  margin: 0 0 0.5rem 0;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  /* fallback font size */
+  font-size: max(1rem, calc(0.8571rem + 0.7143vw));
+  /* for browsers that support calc() */
+  font-size: min(1.5rem, max(1rem, calc(0.8571rem + 0.7143vw)));
+  /* for browsers that support both calc() and min() */
+  letter-spacing: -0.012083333333333em;
+  line-height: 1.29;
+  margin: 0 0 1.8rem 0;
+}
+
+h1 {
+  font-size: 4.6875rem;
+  /* fallback font size */
+  font-size: clamp(3.125rem, calc(2.6786rem + 2.2321vw), 4.6875rem);
+  /* for browsers that support clamp() */
+  font-size: min(4.6875rem, max(3.125rem, calc(2.6786rem + 2.2321vw)));
+  /* for browsers that support calc() and min() */
+  margin: 0 auto 1rem;
+  line-height: 1.2;
+}
+
+sup {
+  font-size: 65%;
+  position: relative;
+  top: -0.5rem;
+}
+
+sub {
+  font-size: 65%;
+  position: relative;
+  bottom: 0;
+}
+
+small {
+  font-size: 1rem;
+}
+
+.date {
+  letter-spacing: 2px;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 2rem 0;
+  padding: 0 0 0 40px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+ul li ul {
+  margin: 10px 0;
+}
+
+hr {
+  border: none;
+  border-bottom: solid 1px var(--gray-800);
+  margin: 2rem 0;
+}
+
+b {
+  font-weight: bold;
+}
+
+hr,
+ul {
+  margin: 2rem 0;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid var(--gray-800);
+}
+
 .faq-open {
     display: block !important;
 }
@@ -108,6 +241,30 @@ b {
     }
 }
 
+@media only screen and (max-width: 680px)
+{
+    .m-top-navigation-container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .hero-title {
+        font-size: 32px !important;
+    }
+
+    .header-section, .what-you-get-section {
+        margin-top: 64px !important;
+    }
+
+    .about-me-section {
+        padding: 64px !important;
+    }
+
+    .container {
+        max-width: 500px !important;
+    }
+}
+
 </style>
 
 <!DOCTYPE html>
@@ -154,7 +311,7 @@ b {
     <header>
         <section class="navigation-section" style="background-color: #115FFF;">
             <nav>
-                <div class="container" style="display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: auto; padding: 16px 0;">
+                <div class="container m-top-navigation-container" style="display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: auto; padding: 16px 0;">
                     <div class="logo-wrapper">
                         <h1 class="logo" style="color: #ffffff; font-size: 24px; font-weight: 700; text-transform: uppercase;">Koffivi.Dev</h1>
                     </div>
@@ -166,7 +323,7 @@ b {
             <div class="container" style="max-width: 1100px; margin: auto;">
                 <h3 class="" style="text-align: center;color: #115FFF;font-weight: 700;text-transform: uppercase;font-size: 20px;">⚠️ Attention Front-End Web Developers! ⚠️</h3>
                 <h1 class="hero-title tb-h1-title " style="text-transform: uppercase; text-align: center; line-height: 120%; font-size: 64px; font-weight: 700; margin-top: 20px;">
-                    Discover How I Launched A <span style="background-color: #115FFF; color: #ffffff;">Converting Web Agency</span> In 3 Days With Little To <span style="background-color: #115FFF; color: #ffffff;">No Money</span>!
+                    Launch Your Own <span style="background-color: #115FFF; color: #ffffff;">Converting Web Agency</span> In 3 Days With Little To <span style="background-color: #115FFF; color: #ffffff;">No Money</span>!
                 </h1>
                 <p style="text-align: center; line-height: 150%; max-width: 800px;margin: auto;margin-top: 24px; font-size: 20px;">Get a step-by-step guide on how to launch your web agency and get clients to build your portfilio with little to no money. These are trail and proven steps I've used to build my own web agency.</p>
                 <p class="" style="text-align: center; font-size: 20px; margin-top: 16px; color: #ff0303;">(Total value of $99)</p>
@@ -184,16 +341,17 @@ b {
             <div class="container" style="padding: 40px; max-width: 1100px; margin: auto;">
                 <h2 class="" style="color: #ffffff; text-align: center; font-size: 32px; font-weight: 700; text-transform: uppercase; margin: auto;
     max-width: 740px; line-height: 140%;">
-                    PURPOSELY DESIGNED TO ADDS YOUR FIRST 10 CLIENT TO YOUR PORTFOLIO 🚀
+                    PURPOSELY DESIGNED TO ADD YOUR FIRST 10 CLIENT TO YOUR PORTFOLIO 🚀
                 </h2>
                 <div class="what-is-inside-wrapper" style="display: flex; align-items: center; margin-top: 32px;">
-                    <img src="https://assets.cdn.filesafe.space/aN2leLHscAefd6RSN3js/media/674d56ec00da0c4294050695.png" alt="" class="" style="max-width: 40%;">
+                    <!-- <img src="https://assets.cdn.filesafe.space/aN2leLHscAefd6RSN3js/media/674d56ec00da0c4294050695.png" alt="" class="" style="max-width: 40%;"> -->
+                    <img src="./images/Group 62.png" alt="" class="" style="max-width: 40%;">
                     <div class="information">
                         <h3 class="" style="color: #ffffff; font-size: 32px; font-weight: 700;">What's Inside 🙌</h3>
                         <p class="" style="color: #ffffff; margin-top: 20px; font-size: 20px; line-height: 150%;">
                             Here a sneak peak of everything that is inside. It's structured to make sure you gain your first 5-10 clients:
                         </p>
-                         <ul style="margin-top: 20px;">
+                         <ul style="margin-top: 20px; list-style: none; padding: 0;">
                             <li style="font-size: 20px; color: #ffffff; margin-top: 12px; line-height: 150%;">✅ <b>Lead Generation Script:</b> Word track to get prospects attention and get them to book 1:1 appointments.</li>
                             <li style="font-size: 20px; color: #ffffff; margin-top: 12px; line-height: 150%;">✅ <b>Objection Handling Cheat Sheet:</b> Handle any doubt that the prospect throws at you and move them to close on projects.</li>
                             <li style="font-size: 20px; color: #ffffff; margin-top: 12px; line-height: 150%;">✅ <b>Marketing Strategies:</b> How to put yourself out there so people notice you and pay attention to you business.</li>
@@ -209,10 +367,10 @@ b {
             <div class="container" style="max-width: 1100px; margin: auto;">
                 <h2 class="" style="    color: #000000; text-align: center; font-size: 32px; font-weight: 700; text-transform: uppercase; margin: auto; max-width: 740px;
                 line-height: 140%;">You're In Safe Hands</h2>
-                <img src="https://koffiviwoglo.com/assets/img/me/Me.png" alt="" class="" style="max-width: 40%; margin: auto; display: flex; margin-top: 32px;">
+                <img src="https://koffiviwoglo.com/assets/img/me/Me.png" alt="" class="" style="max-width: 40%; width: 100%; margin: auto; display: flex; margin-top: 32px;">
                 <p class="about-me-section-p1" style="max-width: 40%; font-size: 20px; line-height: 150%; margin: auto; margin-top: 24px;">I got stuck in the life that I wasn’t happy with, but decided to do something about it. I transformed my life by learning how to code, sales, and digital marketing.</p>
-                <p class="about-me-section-p2"  style="max-width: 40%; font-size: 20px; line-height: 150%; margin: auto; margin-top: 24px;">I’ve tried, failed, and succeeded, and in this kit, I give you my blueprint on how I started my Marketing Agency.</p>
-                <p class="about-me-section-p3"  style="max-width: 40%; font-size: 20px; line-height: 150%; margin: auto; margin-top: 24px;">Some of the projects I've worked on are from these companies:</p>
+                <p class="about-me-section-p2"  style="max-width: 40%; font-size: 20px; line-height: 150%; margin: auto; margin-top: 24px;">I’ve tried, failed, and succeeded. And in this kit, I give you my blueprint on how I started my Marketing Agency.</p>
+                <p class="about-me-section-p3"  style="max-width: 40%;  font-size: 20px; line-height: 150%; margin: auto; margin-top: 24px;">Some of the projects I've worked on are from these companies:</p>
                 
                 <div class="wrapper" style="display: flex; align-items: center; column-gap: 32px; row-gap: 32px; margin-top: 32px; width: 100%; flex-flow: wrap; justify-content: center;">
                     <img src="https://bridgebio.com/wp-content/themes/bridgebio/assets/img/logo.png" alt="" class="" style="max-width: 20%;">
@@ -225,8 +383,8 @@ b {
                 </div>
 
                 <p class="about-me-section-p4"  style="max-width: 40%; font-size: 20px; line-height: 150%; margin: auto; margin-top: 24px;">Some things my clients have said about my agency:</p>
-                <img src="./images/Screenshot 2025-08-25 at 9.34.01 AM 2.png" alt="" style="display: flex; margin: auto; margin-top: 24px;">
-                <img src="./images/Screenshot 2025-08-25 at 9.34.01 AM 3.png" alt="" style="display: flex; margin: auto; margin-top: 24px;">
+                <img src="./images/Screenshot 2025-08-25 at 9.34.01 AM 2.png" alt="" style="max-width: 70%; width: 100%; display: flex; margin: auto; margin-top: 24px;">
+                <img src="./images/Screenshot 2025-08-25 at 9.34.01 AM 3.png" alt="" style="max-width: 70%; width: 100%; display: flex; margin: auto; margin-top: 24px;">
 
                 <a href="https://buy.stripe.com/14AeVc5Sv9xee3K85X8N200" style="text-decoration: none; display:contents;"><button style="font-size: 20px; cursor: pointer; display: flex; margin: auto; margin-top: 32px; border-radius: 10px; text-align: center; padding: 20px 62px; background-color: #115FFF; border: 1px #115FFF solid; color: #ffffff; font-weight: 700; text-transform: uppercase;"> <img src="./images/cart-shopping-fast-svgrepo-com 1.svg" alt="" class="" style="max-width: 24px; margin-right: 8px;"> Yes, I Want To Close My First Client!</button></a>
             </div>
@@ -238,9 +396,9 @@ b {
                 line-height: 140%;">Your Investment Is Risk-Free</h2>
                 <img src="https://assets.cdn.filesafe.space/75x6oVRlEkU7gyLcePUE/media/4ddff901-21a5-40c8-86cc-5aa173007a21.png" alt="" class="" style="width: 35%; margin: auto; display: flex;
                 margin-top: 32px; margin-bottom: 40px;">
-                <p class="" style="font-size: 20px; margin-top: 20px; line-height: 150%;">Try the Web Agency Founder Guide for 30 days.</p>
-                <p class="" style="font-size: 20px; margin-top: 20px; line-height: 150%;">If you’re not seeing results, we’ll refund your money—no questions asked.</p>
-                <p class="" style="font-size: 20px; margin-top: 20px; line-height: 150%;">This is our ironclad guarantee because we know the Starter Kit works and delivers results when YOU take action.</p>
+                <p class="" style="font-size: 20px; margin-top: 20px; line-height: 150%;">Try the Web Agency Starter Guide for 30 days.</p>
+                <p class="" style="font-size: 20px; margin-top: 20px; line-height: 150%;">If you’re not seeing results, I’ll refund your money—no questions asked.</p>
+                <p class="" style="font-size: 20px; margin-top: 20px; line-height: 150%;">This is my ironclad guarantee because I know the Starter Guide works and delivers results when YOU take action.</p>
                 <a href="https://buy.stripe.com/14AeVc5Sv9xee3K85X8N200" style="text-decoration: none; display:contents;"><button style="font-size: 20px; cursor: pointer; display: flex; margin: auto; margin-top: 32px; border-radius: 10px; text-align: center; padding: 20px 62px; background-color: #115FFF; border: 1px #115FFF solid; color: #ffffff; font-weight: 700; text-transform: uppercase;"> <img src="./images/cart-shopping-fast-svgrepo-com 1.svg" alt="" class="" style="max-width: 24px; margin-right: 8px;"> Yes, I Want To Close My First Client!</button></a>
             </div>
         </section>
@@ -272,7 +430,7 @@ b {
                     <div class="faq-card visible-panel" style="background-color: #E7E8EC; padding: 20px; margin-top: 20px;">
                         <div class="faq-title-wrapper" style="display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
                             <h3 class="faq-card-title" style="font-size: 20px; font-weight: 700; cursor: pointer;">
-                                What do I need to get started
+                                What do I need to get started?
                             </h3>
                             <img src="./images/plus-circle-svgrepo-com.svg" alt="" class="" style="max-width: 24px;">
                         </div>
@@ -290,7 +448,7 @@ b {
                     <div class="faq-card visible-panel" style="background-color: #E7E8EC; padding: 20px; margin-top: 20px;">
                         <div class="faq-title-wrapper" style="display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
                             <h3 class="faq-card-title" style="font-size: 20px; font-weight: 700; cursor: pointer;">
-                                What’s Included In The Web Agency Founder Guide?
+                                How do I request a refund?
                             </h3>
                             <img src="./images/plus-circle-svgrepo-com.svg" alt="" class="" style="max-width: 24px;">
                         </div>
@@ -308,7 +466,7 @@ b {
                     <div class="faq-card visible-panel" style="background-color: #E7E8EC; padding: 20px; margin-top: 20px;">
                         <div class="faq-title-wrapper" style="display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
                             <h3 class="faq-card-title" style="font-size: 20px; font-weight: 700; cursor: pointer;">
-                                What’s Included In The Web Agency Founder Guide?
+                                How will the Starter Guide be delivered to me?
                             </h3>
                             <img src="./images/plus-circle-svgrepo-com.svg" alt="" class="" style="max-width: 24px;">
                         </div>
@@ -326,7 +484,7 @@ b {
                     <div class="faq-card visible-panel" style="background-color: #E7E8EC; padding: 20px; margin-top: 20px;">
                         <div class="faq-title-wrapper" style="display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
                             <h3 class="faq-card-title" style="font-size: 20px; font-weight: 700; cursor: pointer;">
-                                What’s Included In The Web Agency Founder Guide?
+                                I'm I qualified to do this?
                             </h3>
                             <img src="./images/plus-circle-svgrepo-com.svg" alt="" class="" style="max-width: 24px;">
                         </div>
@@ -346,6 +504,7 @@ b {
             </div>
         </section>
     </main>
+
     <footer>
     <section class="footer-section" style="
     /* margin-top: 80px; */
@@ -353,12 +512,12 @@ b {
     padding: 40px 0;
     color: #ffffff;
 ">
-        <div class="container" style="text-align: center;">
+        <div class="container" style="text-align: center; margin: auto;">
             <p class="copyright" style="font-size: 12px;">
                 © Copyright Koffivi.dev
             </p>
 
-            <ul class="privacy-terms" style="display: flex; align-items: center; justify-content: center; column-gap: 20px; margin-top: 12px; font-size: 12px;">
+            <ul class="privacy-terms" style="list-style: none; display: flex; align-items: center; justify-content: center; column-gap: 20px; margin-top: 12px; font-size: 12px;">
                 <a href="http://" class="" style="color: #ffffff;">
                     <li class="list-style-type-unset">Terms of Service</li>
                 </a>
